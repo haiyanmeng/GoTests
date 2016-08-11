@@ -1,0 +1,789 @@
+836:7232  set_robust_list(0x7f12ba12b9e0, 24 <unfinished ...>
+838:7232  <... set_robust_list resumed> )   = 0
+840:7232  sigaltstack(NULL,  <unfinished ...>
+842:7232  <... sigaltstack resumed> {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+843:7232  sigaltstack({ss_sp=0xc820130000, ss_flags=0, ss_size=32672}, NULL) = 0
+845:7232  gettid( <unfinished ...>
+847:7232  <... gettid resumed> )            = 7232
+848:7232  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+849:7232  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+851:7232  <... futex resumed> )             = 1
+853:7232  futex(0xc820124508, FUTEX_WAIT, 0, NULL <unfinished ...>
+859:7232  <... futex resumed> )             = 0
+861:7232  futex(0xc820124508, FUTEX_WAIT, 0, NULL <unfinished ...>
+964:7232  <... futex resumed> )             = 0
+966:7232  futex(0xc820124508, FUTEX_WAIT, 0, NULL <unfinished ...>
+975:7232  <... futex resumed> )             = 0
+977:7232  select(0, NULL, NULL, NULL, {0, 100} <unfinished ...>
+986:7232  <... select resumed> )            = 0 (Timeout)
+988:7232  select(0, NULL, NULL, NULL, {0, 100} <unfinished ...>
+1001:7232  <... select resumed> )            = 0 (Timeout)
+1003:7232  futex(0xc820124108, FUTEX_WAKE, 1 <unfinished ...>
+1005:7232  <... futex resumed> )             = 1
+1007:7232  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1010:7232  <... futex resumed> )             = 1
+1012:7232  futex(0xc820124508, FUTEX_WAIT, 0, NULL <unfinished ...>
+1017:7232  <... futex resumed> )             = 0
+1019:7232  select(0, NULL, NULL, NULL, {0, 100} <unfinished ...>
+1040:7232  <... select resumed> )            = 0 (Timeout)
+1042:7232  futex(0xc820124508, FUTEX_WAIT, 0, NULL <unfinished ...>
+1044:7232  <... futex resumed> )             = -1 EAGAIN (Resource temporarily unavailable)
+1046:7232  select(0, NULL, NULL, NULL, {0, 100} <unfinished ...>
+1070:7232  <... select resumed> )            = 0 (Timeout)
+1072:7232  futex(0xc820028908, FUTEX_WAKE, 1 <unfinished ...>
+1074:7232  <... futex resumed> )             = 1
+1078:7232  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1081:7232  <... futex resumed> )             = 0
+1083:7232  futex(0xc820124508, FUTEX_WAIT, 0, NULL <unfinished ...>
+1085:7232  <... futex resumed> )             = -1 EAGAIN (Resource temporarily unavailable)
+1087:7232  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1089:7232  <... futex resumed> )             = 0
+1091:7232  futex(0xc820124508, FUTEX_WAIT, 0, NULL <unfinished ...>
+1093:7232  <... futex resumed> )             = -1 EAGAIN (Resource temporarily unavailable)
+1095:7232  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1097:7232  <... futex resumed> )             = 0
+1099:7232  futex(0xc820124508, FUTEX_WAIT, 0, NULL <unfinished ...>
+1102:7232  <... futex resumed> )             = -1 EAGAIN (Resource temporarily unavailable)
+1104:7232  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1106:7232  <... futex resumed> )             = 0
+1108:7232  futex(0xc820124508, FUTEX_WAIT, 0, NULL <unfinished ...>
+1110:7232  <... futex resumed> )             = -1 EAGAIN (Resource temporarily unavailable)
+1112:7232  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1114:7232  <... futex resumed> )             = 0
+1116:7232  futex(0xc820124508, FUTEX_WAIT, 0, NULL <unfinished ...>
+1118:7232  <... futex resumed> )             = -1 EAGAIN (Resource temporarily unavailable)
+1120:7232  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1122:7232  <... futex resumed> )             = 0
+1124:7232  futex(0xc820124508, FUTEX_WAIT, 0, NULL <unfinished ...>
+1126:7232  <... futex resumed> )             = -1 EAGAIN (Resource temporarily unavailable)
+1128:7232  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1130:7232  <... futex resumed> )             = 0
+1132:7232  futex(0xc820124508, FUTEX_WAIT, 0, NULL <unfinished ...>
+1134:7232  <... futex resumed> )             = -1 EAGAIN (Resource temporarily unavailable)
+1136:7232  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1138:7232  <... futex resumed> )             = 0
+1140:7232  futex(0xc820124508, FUTEX_WAIT, 0, NULL <unfinished ...>
+1142:7232  <... futex resumed> )             = -1 EAGAIN (Resource temporarily unavailable)
+1144:7232  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1146:7232  <... futex resumed> )             = 0
+1148:7232  futex(0xc820124508, FUTEX_WAIT, 0, NULL <unfinished ...>
+1150:7232  <... futex resumed> )             = -1 EAGAIN (Resource temporarily unavailable)
+1152:7232  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1154:7232  <... futex resumed> )             = 0
+1156:7232  futex(0xc820124508, FUTEX_WAIT, 0, NULL <unfinished ...>
+1159:7232  <... futex resumed> )             = -1 EAGAIN (Resource temporarily unavailable)
+1161:7232  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1163:7232  <... futex resumed> )             = 0
+1165:7232  futex(0xc820124508, FUTEX_WAIT, 0, NULL <unfinished ...>
+1168:7232  <... futex resumed> )             = -1 EAGAIN (Resource temporarily unavailable)
+1170:7232  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1172:7232  <... futex resumed> )             = 0
+1174:7232  futex(0xc820124508, FUTEX_WAIT, 0, NULL <unfinished ...>
+1176:7232  <... futex resumed> )             = -1 EAGAIN (Resource temporarily unavailable)
+1179:7232  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1181:7232  <... futex resumed> )             = 0
+1183:7232  futex(0xc820124508, FUTEX_WAIT, 0, NULL <unfinished ...>
+1185:7232  <... futex resumed> )             = -1 EAGAIN (Resource temporarily unavailable)
+1187:7232  select(0, NULL, NULL, NULL, {0, 100} <unfinished ...>
+1212:7232  <... select resumed> )            = 0 (Timeout)
+1214:7232  futex(0xc820124108, FUTEX_WAKE, 1 <unfinished ...>
+1216:7232  <... futex resumed> )             = 1
+1218:7232  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1220:7232  <... futex resumed> )             = 1
+1222:7232  futex(0xc820124508, FUTEX_WAIT, 0, NULL <unfinished ...>
+1234:7232  <... futex resumed> )             = 0
+1237:7232  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1239:7232  <... futex resumed> )             = 0
+1241:7232  futex(0xc820124508, FUTEX_WAIT, 0, NULL <unfinished ...>
+1247:7232  <... futex resumed> )             = 0
+1249:7232  futex(0xc820124508, FUTEX_WAIT, 0, NULL <unfinished ...>
+1320:7232  <... futex resumed> )             = 0
+1322:7232  futex(0xc820124508, FUTEX_WAIT, 0, NULL <unfinished ...>
+1336:7232  <... futex resumed> )             = 0
+1338:7232  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1340:7232  <... futex resumed> )             = 0
+1342:7232  futex(0xc820124508, FUTEX_WAIT, 0, NULL <unfinished ...>
+1344:7232  <... futex resumed> )             = -1 EAGAIN (Resource temporarily unavailable)
+1348:7232  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1351:7232  <... futex resumed> )             = 0
+1354:7232  futex(0xc820124508, FUTEX_WAIT, 0, NULL <unfinished ...>
+1358:7232  <... futex resumed> )             = 0
+1360:7232  select(0, NULL, NULL, NULL, {0, 100} <unfinished ...>
+1383:7232  <... select resumed> )            = 0 (Timeout)
+1386:7232  futex(0xc820028908, FUTEX_WAKE, 1 <unfinished ...>
+1389:7232  <... futex resumed> )             = 1
+1391:7232  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1394:7232  <... futex resumed> )             = 1
+1396:7232  futex(0xc820124508, FUTEX_WAIT, 0, NULL <unfinished ...>
+1402:7232  <... futex resumed> )             = 0
+1404:7232  select(0, NULL, NULL, NULL, {0, 100} <unfinished ...>
+1444:7232  <... select resumed> )            = 0 (Timeout)
+1446:7232  futex(0xc820124108, FUTEX_WAKE, 1 <unfinished ...>
+1448:7232  <... futex resumed> )             = 1
+1450:7232  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1452:7232  <... futex resumed> )             = 0
+1454:7232  futex(0xc820124508, FUTEX_WAIT, 0, NULL <unfinished ...>
+1460:7232  <... futex resumed> )             = 0
+1462:7232  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1464:7232  <... futex resumed> )             = 0
+1466:7232  futex(0xc820124508, FUTEX_WAIT, 0, NULL <unfinished ...>
+1472:7232  <... futex resumed> )             = 0
+1474:7232  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1476:7232  <... futex resumed> )             = 0
+1478:7232  futex(0xc820124508, FUTEX_WAIT, 0, NULL <unfinished ...>
+1484:7232  <... futex resumed> )             = 0
+1486:7232  openat(AT_FDCWD, "freezer.state", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1487:7232  socketpair(AF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC, 0 <unfinished ...>
+1492:7232  <... socketpair resumed> , [5, 6]) = 0
+1495:7232  openat(AT_FDCWD, "/run/runc/test", O_RDONLY|O_CLOEXEC) = 7
+1496:7232  mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f12bdb77000
+1499:7232  getpid()                          = 7225
+1500:7232  capget({_LINUX_CAPABILITY_VERSION_3, 0}, {1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_DAC_READ_SEARCH|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_LINUX_IMMUTABLE|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_BROADCAST|1<<CAP_NET_ADMIN|1<<CAP_NET_RAW|1<<CAP_IPC_LOCK|1<<CAP_IPC_OWNER|1<<CAP_SYS_MODULE|1<<CAP_SYS_RAWIO|1<<CAP_SYS_CHROOT|1<<CAP_SYS_PTRACE|1<<CAP_SYS_PACCT|1<<CAP_SYS_ADMIN|1<<CAP_SYS_BOOT|1<<CAP_SYS_NICE|1<<CAP_SYS_RESOURCE|1<<CAP_SYS_TIME|1<<CAP_SYS_TTY_CONFIG|1<<CAP_MKNOD|1<<CAP_LEASE|1<<CAP_AUDIT_WRITE|1<<CAP_AUDIT_CONTROL|1<<CAP_SETFCAP|1<<CAP_MAC_OVERRIDE|1<<CAP_MAC_ADMIN|1<<CAP_SYSLOG|1<<CAP_WAKE_ALARM|1<<CAP_BLOCK_SUSPEND|1<<CAP_AUDIT_READ, 1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_DAC_READ_SEARCH|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_LINUX_IMMUTABLE|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_BROADCAST|1<<CAP_NET_ADMIN|1<<CAP_NET_RAW|1<<CAP_IPC_LOCK|1<<CAP_IPC_OWNER|1<<CAP_SYS_MODULE|1<<CAP_SYS_RAWIO|1<<CAP_SYS_CHROOT|1<<CAP_SYS_PTRACE|1<<CAP_SYS_PACCT|1<<CAP_SYS_ADMIN|1<<CAP_SYS_BOOT|1<<CAP_SYS_NICE|1<<CAP_SYS_RESOURCE|1<<CAP_SYS_TIME|1<<CAP_SYS_TTY_CONFIG|1<<CAP_MKNOD|1<<CAP_LEASE|1<<CAP_AUDIT_WRITE|1<<CAP_AUDIT_CONTROL|1<<CAP_SETFCAP|1<<CAP_MAC_OVERRIDE|1<<CAP_MAC_ADMIN|1<<CAP_SYSLOG|1<<CAP_WAKE_ALARM|1<<CAP_BLOCK_SUSPEND|1<<CAP_AUDIT_READ, 0}) = 0
+1501:7232  openat(AT_FDCWD, "/proc/7225/status", O_RDONLY|O_CLOEXEC) = 8
+1502:7232  read(8,  <unfinished ...>
+1505:7232  <... read resumed> "Name:\trunc\nState:\tS (sleeping)\nT"..., 4096) = 1092
+1506:7232  close(8 <unfinished ...>
+1508:7232  <... close resumed> )             = 0
+1510:7232  openat(AT_FDCWD, "/dev/null", O_RDONLY|O_CLOEXEC) = 8
+1511:7232  openat(AT_FDCWD, "/dev/null", O_WRONLY|O_CLOEXEC) = 9
+1512:7232  openat(AT_FDCWD, "/dev/null", O_WRONLY|O_CLOEXEC) = 10
+1513:7232  pipe2( <unfinished ...>
+1515:7232  <... pipe2 resumed> [11, 12], O_CLOEXEC) = 0
+1517:7232  getpid()                          = 7225
+1518:7232  clone( <unfinished ...>
+1521:7232  <... clone resumed> child_stack=0, flags=SIGCHLD) = 7233
+1523:7232  close(12)                         = 0
+1525:7232  read(11,  <unfinished ...>
+1538:7232  <... read resumed> "", 8)         = 0
+1540:7232  close(11 <unfinished ...>
+1542:7232  <... close resumed> )             = 0
+1544:7232  close(8)                          = 0
+1545:7232  close(9 <unfinished ...>
+1547:7232  <... close resumed> )             = 0
+1549:7232  close(10 <unfinished ...>
+1551:7232  <... close resumed> )             = 0
+1555:7232  close(5 <unfinished ...>
+1557:7232  <... close resumed> )             = 0
+1559:7232  close(7 <unfinished ...>
+1561:7232  <... close resumed> )             = 0
+1565:7232  write(6, "8\0\0\0000\362\1\0\1\0\0\0\0\0\0\0\10\0\221j\0\0\2|\16\0\224j0 0 "..., 56 <unfinished ...>
+1567:7232  <... write resumed> )             = 56
+1569:7232  wait4(7233,  <unfinished ...>
+1687:7232  <... wait4 resumed> [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, {ru_utime={0, 0}, ru_stime={0, 2280}, ...}) = 7233
+1689:7232  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=7233, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+1691:7232  futex(0xc68440, FUTEX_WAKE, 1)    = 1
+1693:7232  rt_sigreturn({mask=[]})           = 7233
+1695:7232  read(6,  <unfinished ...>
+1697:7232  <... read resumed> "{ \"pid\" : 7234 }\n", 512) = 17
+1701:7232  readlinkat(AT_FDCWD, "/proc/7234/fd/0", "/dev/null", 128) = 9
+1703:7232  readlinkat(AT_FDCWD, "/proc/7234/fd/1",  <unfinished ...>
+1705:7232  <... readlinkat resumed> "/dev/null", 128) = 9
+1707:7232  readlinkat(AT_FDCWD, "/proc/7234/fd/2",  <unfinished ...>
+1709:7232  <... readlinkat resumed> "/dev/null", 128) = 9
+1711:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC <unfinished ...>
+1713:7232  <... openat resumed> )            = 5
+1715:7232  read(5,  <unfinished ...>
+1720:7232  <... read resumed> "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+1721:7232  close(5)                          = 0
+1722:7232  stat("/sys/fs/cgroup",  <unfinished ...>
+1724:7232  <... stat resumed> {st_mode=S_IFDIR|0755, st_size=340, ...}) = 0
+1727:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC <unfinished ...>
+1730:7232  <... openat resumed> )            = 5
+1733:7232  read(5,  <unfinished ...>
+1736:7232  <... read resumed> "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+1739:7232  read(5,  <unfinished ...>
+1741:7232  <... read resumed> "", 3896)      = 0
+1743:7232  close(5 <unfinished ...>
+1745:7232  <... close resumed> )             = 0
+1747:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC <unfinished ...>
+1749:7232  <... openat resumed> )            = 5
+1751:7232  read(5,  <unfinished ...>
+1760:7232  <... read resumed> "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+1763:7232  close(5 <unfinished ...>
+1765:7232  <... close resumed> )             = 0
+1769:7232  stat("/sys/fs/cgroup/cpuset/user.slice",  <unfinished ...>
+1773:7232  <... stat resumed> {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+1775:7232  openat(AT_FDCWD, "/sys/fs/cgroup/cpuset/user.slice/cpuset.cpus", O_RDONLY|O_CLOEXEC <unfinished ...>
+1778:7232  <... openat resumed> )            = 5
+1780:7232  fstat(5,  <unfinished ...>
+1782:7232  <... fstat resumed> {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+1784:7232  read(5,  <unfinished ...>
+1786:7232  <... read resumed> "0-3\n", 512)  = 4
+1790:7232  read(5,  <unfinished ...>
+1792:7232  <... read resumed> "", 1532)      = 0
+1794:7232  close(5 <unfinished ...>
+1796:7232  <... close resumed> )             = 0
+1798:7232  openat(AT_FDCWD, "/sys/fs/cgroup/cpuset/user.slice/cpuset.mems", O_RDONLY|O_CLOEXEC <unfinished ...>
+1802:7232  <... openat resumed> )            = 5
+1804:7232  fstat(5,  <unfinished ...>
+1806:7232  <... fstat resumed> {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+1808:7232  read(5,  <unfinished ...>
+1810:7232  <... read resumed> "0\n", 512)    = 2
+1812:7232  read(5,  <unfinished ...>
+1814:7232  <... read resumed> "", 1534)      = 0
+1816:7232  close(5 <unfinished ...>
+1818:7232  <... close resumed> )             = 0
+1820:7232  openat(AT_FDCWD, "/sys/fs/cgroup/cpuset/cpuset.cpus", O_RDONLY|O_CLOEXEC <unfinished ...>
+1824:7232  <... openat resumed> )            = 5
+1826:7232  fstat(5,  <unfinished ...>
+1828:7232  <... fstat resumed> {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+1830:7232  read(5,  <unfinished ...>
+1832:7232  <... read resumed> "0-3\n", 512)  = 4
+1834:7232  read(5,  <unfinished ...>
+1836:7232  <... read resumed> "", 1532)      = 0
+1838:7232  close(5 <unfinished ...>
+1840:7232  <... close resumed> )             = 0
+1842:7232  openat(AT_FDCWD, "/sys/fs/cgroup/cpuset/cpuset.mems", O_RDONLY|O_CLOEXEC <unfinished ...>
+1844:7232  <... openat resumed> )            = 5
+1846:7232  fstat(5,  <unfinished ...>
+1848:7232  <... fstat resumed> {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+1850:7232  read(5,  <unfinished ...>
+1852:7232  <... read resumed> "0\n", 512)    = 2
+1854:7232  read(5,  <unfinished ...>
+1856:7232  <... read resumed> "", 1534)      = 0
+1858:7232  close(5 <unfinished ...>
+1860:7232  <... close resumed> )             = 0
+1864:7232  stat("/sys/fs/cgroup/cpuset/user.slice/test",  <unfinished ...>
+1867:7232  <... stat resumed> 0xc8201465e8)  = -1 ENOENT (No such file or directory)
+1869:7232  stat("/sys/fs/cgroup/cpuset/user.slice",  <unfinished ...>
+1871:7232  <... stat resumed> {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+1873:7232  mkdirat(AT_FDCWD, "/sys/fs/cgroup/cpuset/user.slice/test", 0755 <unfinished ...>
+1885:7232  <... mkdirat resumed> )           = 0
+1887:7232  openat(AT_FDCWD, "/sys/fs/cgroup/cpuset/user.slice/test/cpuset.cpus", O_RDONLY|O_CLOEXEC <unfinished ...>
+1891:7232  <... openat resumed> )            = 5
+1893:7232  fstat(5,  <unfinished ...>
+1895:7232  <... fstat resumed> {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+1897:7232  read(5,  <unfinished ...>
+1899:7232  <... read resumed> "\n", 512)     = 1
+1901:7232  read(5,  <unfinished ...>
+1903:7232  <... read resumed> "", 1535)      = 0
+1905:7232  close(5 <unfinished ...>
+1907:7232  <... close resumed> )             = 0
+1909:7232  openat(AT_FDCWD, "/sys/fs/cgroup/cpuset/user.slice/test/cpuset.mems", O_RDONLY|O_CLOEXEC <unfinished ...>
+1913:7232  <... openat resumed> )            = 5
+1915:7232  fstat(5,  <unfinished ...>
+1917:7232  <... fstat resumed> {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+1919:7232  read(5,  <unfinished ...>
+1921:7232  <... read resumed> "\n", 512)     = 1
+1924:7232  read(5,  <unfinished ...>
+1926:7232  <... read resumed> "", 1535)      = 0
+1928:7232  close(5 <unfinished ...>
+1930:7232  <... close resumed> )             = 0
+1932:7232  openat(AT_FDCWD, "/sys/fs/cgroup/cpuset/user.slice/cpuset.cpus", O_RDONLY|O_CLOEXEC <unfinished ...>
+1936:7232  <... openat resumed> )            = 5
+1938:7232  fstat(5,  <unfinished ...>
+1940:7232  <... fstat resumed> {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+1942:7232  read(5,  <unfinished ...>
+1944:7232  <... read resumed> "0-3\n", 512)  = 4
+1946:7232  read(5,  <unfinished ...>
+1948:7232  <... read resumed> "", 1532)      = 0
+1950:7232  close(5 <unfinished ...>
+1952:7232  <... close resumed> )             = 0
+1954:7232  openat(AT_FDCWD, "/sys/fs/cgroup/cpuset/user.slice/cpuset.mems", O_RDONLY|O_CLOEXEC <unfinished ...>
+1958:7232  <... openat resumed> )            = 5
+1960:7232  fstat(5,  <unfinished ...>
+1962:7232  <... fstat resumed> {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+1964:7232  read(5,  <unfinished ...>
+1966:7232  <... read resumed> "0\n", 512)    = 2
+1968:7232  read(5,  <unfinished ...>
+1970:7232  <... read resumed> "", 1534)      = 0
+1972:7232  close(5 <unfinished ...>
+1974:7232  <... close resumed> )             = 0
+1976:7232  openat(AT_FDCWD, "/sys/fs/cgroup/cpuset/user.slice/test/cpuset.cpus", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700 <unfinished ...>
+1980:7232  <... openat resumed> )            = 5
+1982:7232  write(5, "0-3\n", 4 <unfinished ...>
+1989:7232  <... write resumed> )             = 4
+1991:7232  close(5 <unfinished ...>
+1993:7232  <... close resumed> )             = 0
+1995:7232  openat(AT_FDCWD, "/sys/fs/cgroup/cpuset/user.slice/test/cpuset.mems", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700 <unfinished ...>
+1997:7232  <... openat resumed> )            = 5
+1999:7232  write(5, "0\n", 2 <unfinished ...>
+2003:7232  <... write resumed> )             = 2
+2005:7232  close(5 <unfinished ...>
+2007:7232  <... close resumed> )             = 0
+2011:7232  openat(AT_FDCWD, "/sys/fs/cgroup/cpuset/user.slice/test/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700 <unfinished ...>
+2014:7232  <... openat resumed> )            = 5
+2016:7232  write(5, "7234", 4 <unfinished ...>
+2698:7232  <... write resumed> )             = 4
+2699:7232  close(5)                          = 0
+2700:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2701:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2702:7232  read(5, "", 3896)                 = 0
+2703:7232  close(5)                          = 0
+2704:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2705:7232  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2706:7232  close(5)                          = 0
+2707:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2708:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2709:7232  read(5, "", 3896)                 = 0
+2710:7232  close(5)                          = 0
+2711:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2712:7232  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2713:7232  close(5)                          = 0
+2714:7232  stat("/sys/fs/cgroup/devices/user.slice/test", 0xc820146ac8) = -1 ENOENT (No such file or directory)
+2715:7232  stat("/sys/fs/cgroup/devices/user.slice", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+2716:7232  mkdirat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/test", 0755) = 0
+2717:7232  openat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/test/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+2718:7232  write(5, "7234", 4)               = 4
+2719:7232  close(5)                          = 0
+2720:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2721:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2722:7232  read(5, "", 3896)                 = 0
+2723:7232  close(5)                          = 0
+2724:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2725:7232  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2726:7232  close(5)                          = 0
+2727:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2728:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2729:7232  read(5, "", 3896)                 = 0
+2730:7232  close(5)                          = 0
+2731:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2732:7232  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2733:7232  close(5)                          = 0
+2734:7232  stat("/sys/fs/cgroup/memory/user.slice/test", 0xc820146c68) = -1 ENOENT (No such file or directory)
+2735:7232  stat("/sys/fs/cgroup/memory/user.slice/test", 0xc820146d38) = -1 ENOENT (No such file or directory)
+2736:7232  stat("/sys/fs/cgroup/memory/user.slice", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+2737:7232  mkdirat(AT_FDCWD, "/sys/fs/cgroup/memory/user.slice/test", 0755) = 0
+2738:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2739:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2740:7232  read(5, "", 3896)                 = 0
+2741:7232  close(5)                          = 0
+2742:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2743:7232  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2744:7232  close(5)                          = 0
+2745:7232  stat("/sys/fs/cgroup/memory/user.slice/test", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+2746:7232  openat(AT_FDCWD, "/sys/fs/cgroup/memory/user.slice/test/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+2747:7232  write(5, "7234", 4)               = 4
+2748:7232  close(5)                          = 0
+2749:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2750:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2751:7232  read(5, "", 3896)                 = 0
+2752:7232  close(5)                          = 0
+2753:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2754:7232  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2755:7232  close(5)                          = 0
+2756:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2757:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2758:7232  read(5, "", 3896)                 = 0
+2759:7232  close(5)                          = 0
+2760:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2761:7232  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2762:7232  close(5)                          = 0
+2763:7232  stat("/sys/fs/cgroup/cpu,cpuacct/user.slice/test", 0xc820146fa8) = -1 ENOENT (No such file or directory)
+2764:7232  stat("/sys/fs/cgroup/cpu,cpuacct/user.slice", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+2765:7232  mkdirat(AT_FDCWD, "/sys/fs/cgroup/cpu,cpuacct/user.slice/test", 0755) = 0
+2766:7232  openat(AT_FDCWD, "/sys/fs/cgroup/cpu,cpuacct/user.slice/test/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700 <unfinished ...>
+2768:7232  <... openat resumed> )            = 5
+2770:7232  write(5, "7234", 4)               = 4
+2771:7232  close(5)                          = 0
+2772:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2773:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2774:7232  read(5, "", 3896)                 = 0
+2775:7232  close(5)                          = 0
+2776:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2777:7232  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2778:7232  close(5)                          = 0
+2779:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2780:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2781:7232  read(5, "", 3896)                 = 0
+2782:7232  close(5)                          = 0
+2783:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2784:7232  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2785:7232  close(5)                          = 0
+2786:7232  stat("/sys/fs/cgroup/cpu,cpuacct/user.slice/test", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+2787:7232  openat(AT_FDCWD, "/sys/fs/cgroup/cpu,cpuacct/user.slice/test/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+2788:7232  write(5, "7234", 4)               = 4
+2789:7232  close(5)                          = 0
+2790:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2791:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2792:7232  read(5, "", 3896)                 = 0
+2793:7232  close(5)                          = 0
+2794:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2795:7232  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2796:7232  close(5)                          = 0
+2797:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2798:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2799:7232  read(5, "", 3896)                 = 0
+2800:7232  close(5)                          = 0
+2801:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2802:7232  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2803:7232  close(5)                          = 0
+2804:7232  stat("/sys/fs/cgroup/pids/user.slice/test", 0xc820147218) = -1 ENOENT (No such file or directory)
+2805:7232  stat("/sys/fs/cgroup/pids/user.slice", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+2806:7232  mkdirat(AT_FDCWD, "/sys/fs/cgroup/pids/user.slice/test", 0755) = 0
+2807:7232  openat(AT_FDCWD, "/sys/fs/cgroup/pids/user.slice/test/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+2808:7232  write(5, "7234", 4)               = 4
+2809:7232  close(5)                          = 0
+2810:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2811:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2812:7232  read(5, "", 3896)                 = 0
+2813:7232  close(5)                          = 0
+2814:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2815:7232  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2816:7232  close(5)                          = 0
+2817:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2818:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2819:7232  read(5, "", 3896)                 = 0
+2820:7232  close(5)                          = 0
+2821:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2822:7232  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2823:7232  close(5)                          = 0
+2824:7232  stat("/sys/fs/cgroup/blkio/user.slice/test", 0xc8201473b8) = -1 ENOENT (No such file or directory)
+2825:7232  stat("/sys/fs/cgroup/blkio/user.slice", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+2826:7232  mkdirat(AT_FDCWD, "/sys/fs/cgroup/blkio/user.slice/test", 0755) = 0
+2827:7232  openat(AT_FDCWD, "/sys/fs/cgroup/blkio/user.slice/test/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+2828:7232  write(5, "7234", 4)               = 4
+2829:7232  close(5)                          = 0
+2830:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2831:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2832:7232  read(5, "", 3896)                 = 0
+2833:7232  close(5)                          = 0
+2834:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2835:7232  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2836:7232  close(5)                          = 0
+2837:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2838:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2839:7232  read(5, "", 3896)                 = 0
+2840:7232  close(5)                          = 0
+2841:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2842:7232  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2843:7232  close(5)                          = 0
+2844:7232  stat("/sys/fs/cgroup/hugetlb/user.slice/test", 0xc820147558) = -1 ENOENT (No such file or directory)
+2845:7232  stat("/sys/fs/cgroup/hugetlb/user.slice", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+2846:7232  mkdirat(AT_FDCWD, "/sys/fs/cgroup/hugetlb/user.slice/test", 0755) = 0
+2847:7232  openat(AT_FDCWD, "/sys/fs/cgroup/hugetlb/user.slice/test/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+2848:7232  write(5, "7234", 4)               = 4
+2849:7232  close(5)                          = 0
+2850:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2851:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2852:7232  read(5, "", 3896)                 = 0
+2853:7232  close(5)                          = 0
+2854:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2855:7232  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2856:7232  close(5)                          = 0
+2857:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2858:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2859:7232  read(5, "", 3896)                 = 0
+2860:7232  close(5)                          = 0
+2861:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2862:7232  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2863:7232  close(5)                          = 0
+2864:7232  stat("/sys/fs/cgroup/net_cls,net_prio/user.slice/test", 0xc8201476f8) = -1 ENOENT (No such file or directory)
+2865:7232  stat("/sys/fs/cgroup/net_cls,net_prio/user.slice", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+2866:7232  mkdirat(AT_FDCWD, "/sys/fs/cgroup/net_cls,net_prio/user.slice/test", 0755) = 0
+2867:7232  openat(AT_FDCWD, "/sys/fs/cgroup/net_cls,net_prio/user.slice/test/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+2868:7232  write(5, "7234", 4)               = 4
+2869:7232  close(5)                          = 0
+2870:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2871:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2872:7232  read(5, "", 3896)                 = 0
+2873:7232  close(5)                          = 0
+2874:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2875:7232  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2876:7232  close(5)                          = 0
+2877:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2878:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2879:7232  read(5, "", 3896)                 = 0
+2880:7232  close(5)                          = 0
+2881:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2882:7232  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2883:7232  close(5)                          = 0
+2884:7232  stat("/sys/fs/cgroup/net_cls,net_prio/user.slice/test", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+2885:7232  openat(AT_FDCWD, "/sys/fs/cgroup/net_cls,net_prio/user.slice/test/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+2886:7232  write(5, "7234", 4)               = 4
+2887:7232  close(5)                          = 0
+2888:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2889:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2890:7232  read(5, "", 3896)                 = 0
+2891:7232  close(5)                          = 0
+2892:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2893:7232  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2894:7232  close(5)                          = 0
+2895:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2896:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2897:7232  read(5, "", 3896)                 = 0
+2898:7232  close(5)                          = 0
+2899:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2900:7232  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2901:7232  close(5)                          = 0
+2902:7232  stat("/sys/fs/cgroup/perf_event/user.slice/test", 0xc820147968) = -1 ENOENT (No such file or directory)
+2903:7232  stat("/sys/fs/cgroup/perf_event/user.slice", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+2904:7232  mkdirat(AT_FDCWD, "/sys/fs/cgroup/perf_event/user.slice/test", 0755) = 0
+2905:7232  openat(AT_FDCWD, "/sys/fs/cgroup/perf_event/user.slice/test/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+2906:7232  write(5, "7234", 4)               = 4
+2907:7232  close(5)                          = 0
+2908:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2909:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2910:7232  read(5, "", 3896)                 = 0
+2911:7232  close(5)                          = 0
+2912:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2913:7232  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2914:7232  close(5)                          = 0
+2915:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2916:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2917:7232  read(5, "", 3896)                 = 0
+2918:7232  close(5)                          = 0
+2919:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2920:7232  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2921:7232  close(5)                          = 0
+2922:7232  stat("/sys/fs/cgroup/freezer/user.slice/test", 0xc820147b08) = -1 ENOENT (No such file or directory)
+2923:7232  stat("/sys/fs/cgroup/freezer/user.slice", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+2924:7232  mkdirat(AT_FDCWD, "/sys/fs/cgroup/freezer/user.slice/test", 0755) = 0
+2925:7232  openat(AT_FDCWD, "/sys/fs/cgroup/freezer/user.slice/test/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+2926:7232  write(5, "7234", 4)               = 4
+2927:7232  close(5)                          = 0
+2928:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2929:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2930:7232  read(5, "", 3896)                 = 0
+2931:7232  close(5)                          = 0
+2932:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2933:7232  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2934:7232  close(5)                          = 0
+2935:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2936:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2937:7232  read(5, "", 3896)                 = 0
+2938:7232  close(5)                          = 0
+2939:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2940:7232  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2941:7232  close(5)                          = 0
+2942:7232  stat("/sys/fs/cgroup/systemd/user.slice/test", 0xc820147ca8) = -1 ENOENT (No such file or directory)
+2943:7232  stat("/sys/fs/cgroup/systemd/user.slice", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+2944:7232  mkdirat(AT_FDCWD, "/sys/fs/cgroup/systemd/user.slice/test", 0755) = 0
+2945:7232  openat(AT_FDCWD, "/sys/fs/cgroup/systemd/user.slice/test/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+2946:7232  write(5, "7234", 4)               = 4
+2947:7232  close(5)                          = 0
+2948:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2949:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2950:7232  read(5, "", 3896)                 = 0
+2951:7232  close(5)                          = 0
+2952:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2953:7232  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2954:7232  close(5)                          = 0
+2957:7232  write(6, "{\"args\":[\"cat\",\"/etc/passwd\"],\"e"..., 7427) = 7427
+2959:7232  read(6,  <unfinished ...>
+3426:7232  <... read resumed> "{\"type\":3}", 512) = 10
+3428:7232  write(6, "{\"type\":4}", 10)      = 10
+3430:7232  read(6,  <unfinished ...>
+3540:7232  <... read resumed> "{\"type\":0}", 512) = 10
+3541:7232  futex(0xc4c9f0, FUTEX_WAKE, 1)    = 1
+3544:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+3546:7232  read(5,  <unfinished ...>
+3549:7232  <... read resumed> "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+3551:7232  read(5, "", 3896)                 = 0
+3552:7232  close(5)                          = 0
+3553:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC <unfinished ...>
+3556:7232  <... openat resumed> )            = 5
+3561:7232  read(5,  <unfinished ...>
+3565:7232  <... read resumed> "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+3569:7232  close(5)                          = 0
+3570:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+3571:7232  mmap(0xc820200000, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xc820200000
+3572:7232  mmap(0xc81ffe8000, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+3574:7232  <... mmap resumed> )              = 0xc81ffe8000
+3576:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+3577:7232  read(5, "", 3896)                 = 0
+3578:7232  close(5)                          = 0
+3579:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC <unfinished ...>
+3581:7232  <... openat resumed> )            = 5
+3583:7232  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+3585:7232  close(5 <unfinished ...>
+3587:7232  <... close resumed> )             = 0
+3588:7232  openat(AT_FDCWD, "/proc/self/uid_map", O_RDONLY|O_CLOEXEC) = 5
+3589:7232  read(5, "         0          0 4294967295"..., 4096) = 33
+3590:7232  close(5 <unfinished ...>
+3592:7232  <... close resumed> )             = 0
+3594:7232  openat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/test/devices.deny", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+3595:7232  write(5, "a *:* rwm", 9)          = 9
+3597:7232  close(5 <unfinished ...>
+3599:7232  <... close resumed> )             = 0
+3600:7232  openat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/test/devices.allow", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+3601:7232  write(5, "c *:* m", 7)            = 7
+3602:7232  close(5)                          = 0
+3604:7232  openat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/test/devices.allow", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700 <unfinished ...>
+3606:7232  <... openat resumed> )            = 5
+3607:7232  write(5, "b *:* m", 7)            = 7
+3608:7232  close(5)                          = 0
+3609:7232  openat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/test/devices.allow", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+3610:7232  write(5, "c 1:3 rwm", 9)          = 9
+3612:7232  close(5 <unfinished ...>
+3614:7232  <... close resumed> )             = 0
+3615:7232  openat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/test/devices.allow", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+3616:7232  write(5, "c 1:8 rwm", 9)          = 9
+3617:7232  close(5)                          = 0
+3618:7232  openat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/test/devices.allow", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700 <unfinished ...>
+3620:7232  <... openat resumed> )            = 5
+3622:7232  write(5, "c 1:7 rwm", 9)          = 9
+3623:7232  close(5)                          = 0
+3624:7232  openat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/test/devices.allow", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+3625:7232  write(5, "c 5:0 rwm", 9)          = 9
+3626:7232  close(5)                          = 0
+3628:7232  openat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/test/devices.allow", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700 <unfinished ...>
+3630:7232  <... openat resumed> )            = 5
+3631:7232  write(5, "c 1:5 rwm", 9)          = 9
+3632:7232  close(5)                          = 0
+3633:7232  openat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/test/devices.allow", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+3634:7232  write(5, "c 1:9 rwm", 9)          = 9
+3636:7232  close(5 <unfinished ...>
+3638:7232  <... close resumed> )             = 0
+3639:7232  openat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/test/devices.allow", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+3640:7232  write(5, "c 5:1 rwm", 9)          = 9
+3641:7232  close(5)                          = 0
+3642:7232  openat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/test/devices.allow", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700 <unfinished ...>
+3644:7232  <... openat resumed> )            = 5
+3646:7232  write(5, "c 136:* rwm", 11)       = 11
+3647:7232  close(5)                          = 0
+3648:7232  openat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/test/devices.allow", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+3649:7232  write(5, "c 5:2 rwm", 9)          = 9
+3650:7232  close(5)                          = 0
+3652:7232  openat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/test/devices.allow", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700 <unfinished ...>
+3654:7232  <... openat resumed> )            = 5
+3655:7232  write(5, "c 10:200 rwm", 12)      = 12
+3656:7232  close(5)                          = 0
+3657:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+3658:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+3661:7232  read(5, "", 3896)                 = 0
+3662:7232  close(5)                          = 0
+3663:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+3664:7232  read(5,  <unfinished ...>
+3667:7232  <... read resumed> "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+3668:7232  close(5)                          = 0
+3669:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+3670:7232  read(5,  <unfinished ...>
+3672:7232  <... read resumed> "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+3674:7232  read(5, "", 3896)                 = 0
+3675:7232  close(5)                          = 0
+3676:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+3677:7232  read(5,  <unfinished ...>
+3680:7232  <... read resumed> "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+3681:7232  close(5)                          = 0
+3683:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC <unfinished ...>
+3685:7232  <... openat resumed> )            = 5
+3686:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+3687:7232  read(5, "", 3896)                 = 0
+3688:7232  close(5)                          = 0
+3689:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC <unfinished ...>
+3691:7232  <... openat resumed> )            = 5
+3693:7232  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+3696:7232  close(5)                          = 0
+3697:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+3698:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+3699:7232  read(5,  <unfinished ...>
+3701:7232  <... read resumed> "", 3896)      = 0
+3703:7232  close(5)                          = 0
+3704:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+3705:7232  read(5,  <unfinished ...>
+3707:7232  <... read resumed> "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+3709:7232  close(5)                          = 0
+3710:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+3711:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+3714:7232  read(5, "", 3896)                 = 0
+3715:7232  close(5)                          = 0
+3716:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+3717:7232  read(5,  <unfinished ...>
+3720:7232  <... read resumed> "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+3721:7232  close(5)                          = 0
+3722:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+3724:7232  read(5,  <unfinished ...>
+3726:7232  <... read resumed> "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+3727:7232  read(5, "", 3896)                 = 0
+3728:7232  close(5)                          = 0
+3729:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+3730:7232  read(5,  <unfinished ...>
+3733:7232  <... read resumed> "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+3734:7232  close(5 <unfinished ...>
+3736:7232  <... close resumed> )             = 0
+3738:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+3739:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+3740:7232  read(5, "", 3896)                 = 0
+3741:7232  close(5)                          = 0
+3742:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC <unfinished ...>
+3744:7232  <... openat resumed> )            = 5
+3746:7232  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+3747:7232  close(5 <unfinished ...>
+3749:7232  <... close resumed> )             = 0
+3751:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+3752:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+3753:7232  read(5, "", 3896)                 = 0
+3754:7232  close(5)                          = 0
+3755:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC <unfinished ...>
+3757:7232  <... openat resumed> )            = 5
+3759:7232  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+3760:7232  close(5)                          = 0
+3762:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC <unfinished ...>
+3764:7232  <... openat resumed> )            = 5
+3765:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+3766:7232  read(5, "", 3896)                 = 0
+3767:7232  close(5)                          = 0
+3768:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+3771:7232  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+3774:7232  close(5)                          = 0
+3775:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+3776:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+3777:7232  read(5,  <unfinished ...>
+3779:7232  <... read resumed> "", 3896)      = 0
+3781:7232  close(5)                          = 0
+3782:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+3783:7232  read(5,  <unfinished ...>
+3785:7232  <... read resumed> "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+3787:7232  close(5)                          = 0
+3788:7232  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+3789:7232  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+3790:7232  read(5,  <unfinished ...>
+3792:7232  <... read resumed> "", 3896)      = 0
+3793:7232  close(5 <unfinished ...>
+3795:7232  <... close resumed> )             = 0
+3796:7232  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+3797:7232  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+3800:7232  close(5)                          = 0
+3801:7232  openat(AT_FDCWD, "/proc/7234/oom_score_adj", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0600) = 5
+3802:7232  write(5, "0", 1)                  = 1
+3803:7232  close(5 <unfinished ...>
+3805:7232  <... close resumed> )             = 0
+3807:7232  prlimit64(7234, RLIMIT_NOFILE, {rlim_cur=1024, rlim_max=1024}, {rlim_cur=1024, rlim_max=4*1024}) = 0
+3808:7232  write(6, "{\"type\":2}", 10)      = 10
+3810:7232  read(6,  <unfinished ...>
+4027:7232  <... read resumed> "", 512)       = 0
+4029:7232  shutdown(6, SHUT_WR)              = 0
+4030:7232  close(6)                          = 0
+4032:7232  openat(AT_FDCWD, "/proc/7234/stat", O_RDONLY|O_CLOEXEC <unfinished ...>
+4034:7232  <... openat resumed> )            = 5
+4035:7232  fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+4036:7232  read(5, "7234 (exe) S 7225 7234 7234 3481"..., 512) = 304
+4037:7232  read(5, "", 1232)                 = 0
+4038:7232  close(5 <unfinished ...>
+4040:7232  <... close resumed> )             = 0
+4046:7232  stat("/proc/self/ns/net", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+4047:7232  stat("/proc/self/ns/pid", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+4048:7232  stat("/proc/self/ns/mnt", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+4050:7232  stat("/proc/self/ns/uts",  <unfinished ...>
+4052:7232  <... stat resumed> {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+4053:7232  stat("/proc/self/ns/ipc", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+4054:7232  stat("/proc/self/ns/user", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+4055:7232  openat(AT_FDCWD, "/run/runc/test/state.json", O_RDWR|O_CREAT|O_TRUNC|O_CLOEXEC, 0666) = 5
+4057:7232  write(5, "{\"id\":\"test\",\"init_process_pid\":"..., 7653 <unfinished ...>
+4059:7232  <... write resumed> )             = 7653
+4060:7232  close(5)                          = 0
+4061:7232  openat(AT_FDCWD, "/run/runc/test/exec.fifo", O_RDONLY|O_CLOEXEC <unfinished ...>
+4063:7232  <... openat resumed> )            = 5
+4065:7232  read(5,  <unfinished ...>
+4071:7232  <... read resumed> "0", 512)      = 1
+4073:7232  read(5,  <unfinished ...>
+4080:7232  <... read resumed> "", 1535)      = 0
+4081:7232  unlinkat(AT_FDCWD, "/run/runc/test/exec.fifo", 0 <unfinished ...>
+4083:7232  <... unlinkat resumed> )          = 0
+4085:7232  close(5 <unfinished ...>
+4087:7232  <... close resumed> )             = 0
+4089:7232  ioctl(0, TIOCGWINSZ <unfinished ...>
+4091:7232  <... ioctl resumed> , {ws_row=39, ws_col=146, ws_xpixel=0, ws_ypixel=0}) = 0
+4093:7232  ioctl(4, TIOCSWINSZ, {ws_row=39, ws_col=146, ws_xpixel=0, ws_ypixel=0} <unfinished ...>
+4095:7232  <... ioctl resumed> )             = 0
+4097:7232  wait4(-1,  <unfinished ...>
+4099:7232  <... wait4 resumed> 0xc8200c62ec, WNOHANG, 0xc8200c6358) = 0
+4101:7232  futex(0xc820124508, FUTEX_WAIT, 0, NULL <unfinished ...>
+4120:7232  <... futex resumed> )             = 0
+4122:7232  futex(0xc820124508, FUTEX_WAIT, 0, NULL <unfinished ...>
+4128:7232  <... futex resumed> )             = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+4129:7232  futex(0xc820124508, FUTEX_WAIT, 0, NULL <unfinished ...>
+4139:7232  <... futex resumed> )             = 0
+4179:7232  futex(0xc820124508, FUTEX_WAIT, 0, NULL <unfinished ...>
+4232:7232  +++ exited with 0 +++

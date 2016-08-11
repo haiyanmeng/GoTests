@@ -1,0 +1,540 @@
+execve("/usr/bin/strace", ["strace", "-f", "-o", "sleep.log.noD", "sleep", "5"], [/* 55 vars */]) = 0
+brk(NULL)                               = 0x56361f49e000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f70ebb58000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=89834, ...}) = 0
+mmap(NULL, 89834, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f70ebb42000
+close(3)                                = 0
+open("/lib64/libunwind-x86_64.so.8", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \25\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=64632, ...}) = 0
+mmap(NULL, 2219400, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f70eb71b000
+mprotect(0x7f70eb72a000, 2093056, PROT_NONE) = 0
+mmap(0x7f70eb929000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7f70eb929000
+mmap(0x7f70eb92b000, 56712, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f70eb92b000
+close(3)                                = 0
+open("/lib64/libunwind.so.8", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\25\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=44064, ...}) = 0
+mmap(NULL, 2198984, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f70eb502000
+mprotect(0x7f70eb50c000, 2093056, PROT_NONE) = 0
+mmap(0x7f70eb70b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000) = 0x7f70eb70b000
+mmap(0x7f70eb70d000, 56776, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f70eb70d000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f70ebb41000
+open("/lib64/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360*\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=92816, ...}) = 0
+mmap(NULL, 2188320, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f70eb2eb000
+mprotect(0x7f70eb301000, 2093056, PROT_NONE) = 0
+mmap(0x7f70eb500000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15000) = 0x7f70eb500000
+close(3)                                = 0
+open("/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\6\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=2104216, ...}) = 0
+mmap(NULL, 3934688, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f70eaf2a000
+mprotect(0x7f70eb0e1000, 2097152, PROT_NONE) = 0
+mmap(0x7f70eb2e1000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b7000) = 0x7f70eb2e1000
+mmap(0x7f70eb2e7000, 14816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f70eb2e7000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f70ebb40000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f70ebb3e000
+arch_prctl(ARCH_SET_FS, 0x7f70ebb3e740) = 0
+mprotect(0x7f70eb2e1000, 16384, PROT_READ) = 0
+mprotect(0x7f70eb500000, 4096, PROT_READ) = 0
+mprotect(0x7f70eb70b000, 4096, PROT_READ) = 0
+mprotect(0x7f70eb929000, 4096, PROT_READ) = 0
+mprotect(0x56361d5a8000, 253952, PROT_READ) = 0
+mprotect(0x7f70ebb59000, 4096, PROT_READ) = 0
+munmap(0x7f70ebb42000, 89834)           = 0
+rt_sigaction(SIGCHLD, {SIG_DFL, [CHLD], SA_RESTORER|SA_RESTART, 0x7f70eaf5eab0}, {SIG_DFL, [], 0}, 8) = 0
+getpid()                                = 24450
+uname({sysname="Linux", nodename="localhost.localdomain", ...}) = 0
+brk(NULL)                               = 0x56361f49e000
+brk(0x56361f4bf000)                     = 0x56361f4bf000
+brk(NULL)                               = 0x56361f4bf000
+getuid()                                = 1000
+getgid()                                = 1000
+clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f70ebb3ea10) = 24451
+ptrace(PTRACE_SEIZE, 24451, NULL, 0)    = 0
+kill(24451, SIGKILL)                    = 0
+wait4(24451, [{WIFSIGNALED(s) && WTERMSIG(s) == SIGKILL}], 0, NULL) = 24451
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_KILLED, si_pid=24451, si_uid=1000, si_status=SIGKILL, si_utime=0, si_stime=0} ---
+fcntl(0, F_GETFD)                       = 0
+fcntl(1, F_GETFD)                       = 0
+geteuid()                               = 1000
+getuid()                                = 1000
+open("sleep.log.noD", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+geteuid()                               = 1000
+getuid()                                = 1000
+fcntl(3, F_GETFD)                       = 0
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+stat("/usr/local/go/bin/sleep", 0x7ffe2ef107e0) = -1 ENOENT (No such file or directory)
+stat("/usr/local/go/bin/sleep", 0x7ffe2ef107e0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64/qt-3.3/bin/sleep", 0x7ffe2ef107e0) = -1 ENOENT (No such file or directory)
+stat("/usr/local/bin/sleep", 0x7ffe2ef107e0) = -1 ENOENT (No such file or directory)
+stat("/usr/local/sbin/sleep", 0x7ffe2ef107e0) = -1 ENOENT (No such file or directory)
+stat("/usr/bin/sleep", {st_mode=S_IFREG|0755, st_size=32600, ...}) = 0
+stat("/usr/bin/sleep", {st_mode=S_IFREG|0755, st_size=32600, ...}) = 0
+clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f70ebb3ea10) = 24452
+wait4(24452, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGSTOP}], WSTOPPED, NULL) = 24452
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_STOPPED, si_pid=24452, si_uid=1000, si_status=SIGSTOP, si_utime=0, si_stime=0} ---
+ptrace(PTRACE_SEIZE, 24452, NULL, PTRACE_O_TRACESYSGOOD|PTRACE_O_TRACEFORK|PTRACE_O_TRACEVFORK|PTRACE_O_TRACECLONE|PTRACE_O_TRACEEXEC) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_STOPPED, si_pid=24452, si_uid=1000, si_status=SIG_0, si_utime=0, si_stime=0} ---
+ptrace(PTRACE_INTERRUPT, 24452)         = 0
+kill(24452, SIGCONT)                    = 0
+close(0)                                = 0
+pipe([0, 4])                            = 0
+close(4)                                = 0
+dup2(0, 1)                              = 1
+rt_sigaction(SIGTTOU, {SIG_IGN, [], SA_RESTORER, 0x7f70eaf5eab0}, NULL, 8) = 0
+rt_sigaction(SIGTTIN, {SIG_IGN, [], SA_RESTORER, 0x7f70eaf5eab0}, NULL, 8) = 0
+rt_sigaction(SIGHUP, {SIG_IGN, [], SA_RESTORER, 0x7f70eaf5eab0}, NULL, 8) = 0
+rt_sigaction(SIGINT, {SIG_IGN, [], SA_RESTORER, 0x7f70eaf5eab0}, NULL, 8) = 0
+rt_sigaction(SIGQUIT, {SIG_IGN, [], SA_RESTORER, 0x7f70eaf5eab0}, NULL, 8) = 0
+rt_sigaction(SIGPIPE, {SIG_IGN, [], SA_RESTORER, 0x7f70eaf5eab0}, NULL, 8) = 0
+rt_sigaction(SIGTERM, {SIG_IGN, [], SA_RESTORER, 0x7f70eaf5eab0}, NULL, 8) = 0
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGSTOP} | PTRACE_EVENT_STOP << 16], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+ptrace(PTRACE_LISTEN, 24452)            = 0
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP} | PTRACE_EVENT_STOP << 16], __WALL, NULL) = 24452
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_CONTINUED, si_pid=24452, si_uid=1000, si_status=SIGCONT, si_utime=0, si_stime=0} ---
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGCONT}], __WALL, NULL) = 24452
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGCONT, si_utime=0, si_stime=0} ---
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+ptrace(PTRACE_GETSIGINFO, 24452, NULL, {si_signo=SIGCONT, si_code=SI_USER, si_pid=24450, si_uid=1000}) = 0
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIGCONT) = 0
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f70ebb57000
+process_vm_readv(24452, [{"/usr/bin/sleep\0/sleep\0sleep\0\0\0\0\0"..., 1936}], 1, [{0x7ffe2ef10870, 1936}], 1, 0) = 1936
+process_vm_readv(24452, [{"\222-\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11c18, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"sleep\0005\0XDG_VTNR=2\0XDG_SESSION_I"..., 33}], 1, [{0x7ffe2ef12d92, 33}], 1, 0) = 33
+process_vm_readv(24452, [{"\230-\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11c20, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"5\0XDG_VTNR=2\0XDG_SESSION_ID=1\0HO"..., 33}], 1, [{0x7ffe2ef12d98, 33}], 1, 0) = 33
+process_vm_readv(24452, [{"\0\0\0\0\0\0\0\0", 8}], 1, [{0x7ffe2ef11c28, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\232-\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11c30, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\245-\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11c38, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\266-\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11c40, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\325-\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11c48, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\346-\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11c50, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\375-\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11c58, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\r.\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11c60, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\31.\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11c68, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"'.\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11c70, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"9.\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11c78, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"Q.\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11c80, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"q.\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11c88, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"|.\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11c90, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\302.\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11c98, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"S4\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11ca0, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"|4\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11ca8, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\2739\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11cb0, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\3129\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11cb8, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\30:\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11cc0, 8}], 1, 0) = 8
+process_vm_readv(24452, [{".:\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11cc8, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"I:\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11cd0, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"^;\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11cd8, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"x;\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11ce0, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\212;\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11ce8, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\277;\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11cf0, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\324;\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11cf8, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\350;\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11d00, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\371;\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11d08, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\16<\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11d10, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\237<\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11d18, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\256<\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11d20, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\312<\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11d28, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\333<\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11d30, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\362<\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11d38, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"%=\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11d40, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"-=\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11d48, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"<=\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11d50, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"M=\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11d58, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"b=\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11d60, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\216=\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11d68, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\234=\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11d70, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\266=\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11d78, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\322=\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11d80, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\333=\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11d88, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"=>\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11d90, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\\>\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11d98, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"r>\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11da0, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\225>\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11da8, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\242>\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11db0, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\255>\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11db8, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\314>\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11dc0, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\346>\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11dc8, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\17?\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11dd0, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"L?\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11dd8, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\326?\361.\376\177\0\0", 8}], 1, [{0x7ffe2ef11de0, 8}], 1, 0) = 8
+process_vm_readv(24452, [{"\0\0\0\0\0\0\0\0", 8}], 1, [{0x7ffe2ef11de8, 8}], 1, 0) = 8
+write(3, "24452 execve(\"/usr/bin/sleep\", ["..., 62) = 62
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP} | PTRACE_EVENT_EXEC << 16], __WALL, NULL) = 24452
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+ptrace(PTRACE_GETEVENTMSG, 24452, NULL, [24452]) = 0
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, ") = 0\n", 6)                  = 6
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, "24452 brk(NULL", 14)          = 14
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, ")                         = 0x55"..., 43) = 43
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, "24452 mmap(NULL, 4096, PROT_READ"..., 77) = 77
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, ") = 0x7f02df72c000\n", 19)    = 19
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+process_vm_readv(24452, [{"/etc/ld.so.preload\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 528}], 1, [{0x7f02df52adf0, 528}], 1, 0) = 528
+write(3, "24452 access(\"/etc/ld.so.preload"..., 39) = 39
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, ") = -1 ENOENT (No such file or d"..., 42) = 42
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+process_vm_readv(24452, [{"/etc/ld.so.cache\0 search cache=%"..., 2239}], 1, [{0x7f02df529741, 2239}], 1, 0) = 2239
+write(3, "24452 open(\"/etc/ld.so.cache\", O"..., 49) = 49
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, ") = 3\n", 6)                  = 6
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, "24452 fstat(3, ", 15)         = 15
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+process_vm_readv(24452, [{"\0\375\0\0\0\0\0\0\245\t \0\0\0\0\0\1\0\0\0\0\0\0\0\244\201\0\0\0\0\0\0"..., 144}], 1, [{0x7ffdea710fd0, 144}], 1, 0) = 144
+write(3, "{st_mode=S_IFREG|0644, st_size=8"..., 48) = 48
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, "24452 mmap(NULL, 89834, PROT_REA"..., 52) = 52
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, ") = 0x7f02df716000\n", 19)    = 19
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, "24452 close(3", 13)           = 13
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, ")                          = 0\n", 31) = 31
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+process_vm_readv(24452, [{"/lib64/libc.so.6\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 2496}], 1, [{0x7f02df72c640, 2496}], 1, 0) = 2496
+write(3, "24452 open(\"/lib64/libc.so.6\", O"..., 49) = 49
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, ") = 3\n", 6)                  = 6
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, "24452 read(3, ", 14)          = 14
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+process_vm_readv(24452, [{"\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\6\2\0\0\0\0\0", 32}], 1, [{0x7ffdea711160, 32}], 1, 0) = 32
+write(3, "\"\\177ELF\\2\\1\\1\\3\\0\\0\\0\\0\\0\\0\\0\\0"..., 82) = 82
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, "24452 fstat(3, ", 15)         = 15
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+process_vm_readv(24452, [{"\0\375\0\0\0\0\0\0\244 .\0\0\0\0\0\1\0\0\0\0\0\0\0\355\201\0\0\0\0\0\0"..., 144}], 1, [{0x7ffdea711010, 144}], 1, 0) = 144
+write(3, "{st_mode=S_IFREG|0755, st_size=2"..., 50) = 50
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, "24452 mmap(NULL, 3934688, PROT_R"..., 78) = 78
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, ") = 0x7f02df14c000\n", 19)    = 19
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, "24452 mprotect(0x7f02df303000, 2"..., 49) = 49
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, ") = 0\n", 6)                  = 6
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, "24452 mmap(0x7f02df503000, 24576"..., 104) = 104
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, ") = 0x7f02df503000\n", 19)    = 19
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, "24452 mmap(0x7f02df509000, 14816"..., 98) = 98
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, ") = 0x7f02df509000\n", 19)    = 19
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, "24452 close(3", 13)           = 13
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, ")                          = 0\n", 31) = 31
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, "24452 mmap(NULL, 4096, PROT_READ"..., 77) = 77
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, ") = 0x7f02df715000\n", 19)    = 19
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, "24452 mmap(NULL, 4096, PROT_READ"..., 77) = 77
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, ") = 0x7f02df714000\n", 19)    = 19
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, "24452 mmap(NULL, 4096, PROT_READ"..., 77) = 77
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, ") = 0x7f02df713000\n", 19)    = 19
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, "24452 arch_prctl(ARCH_SET_FS, 0x"..., 44) = 44
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, ") = 0\n", 6)                  = 6
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, "24452 mprotect(0x7f02df503000, 1"..., 47) = 47
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, ") = 0\n", 6)                  = 6
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, "24452 mprotect(0x55f047ec2000, 4"..., 46) = 46
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, ") = 0\n", 6)                  = 6
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, "24452 mprotect(0x7f02df72d000, 4"..., 46) = 46
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, ") = 0\n", 6)                  = 6
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, "24452 munmap(0x7f02df716000, 898"..., 34) = 34
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, ")     = 0\n", 10)             = 10
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, "24452 brk(NULL", 14)          = 14
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, ")                         = 0x55"..., 43) = 43
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, "24452 brk(0x55f048327000", 24) = 24
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, ")               = 0x55f048327000"..., 33) = 33
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, "24452 brk(NULL", 14)          = 14
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, ")                         = 0x55"..., 43) = 43
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+process_vm_readv(24452, [{"/usr/lib/locale/locale-archive\0\0"..., 1920}], 1, [{0x7f02df2d7880, 1920}], 1, 0) = 1920
+write(3, "24452 open(\"/usr/lib/locale/loca"..., 63) = 63
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, ") = 3\n", 6)                  = 6
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, "24452 fstat(3, ", 15)         = 15
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+process_vm_readv(24452, [{"\0\375\0\0\0\0\0\0\2304.\0\0\0\0\0\1\0\0\0\0\0\0\0\244\201\0\0\0\0\0\0"..., 144}], 1, [{0x7f02df5089a0, 144}], 1, 0) = 144
+write(3, "{st_mode=S_IFREG|0644, st_size=1"..., 52) = 52
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, "24452 mmap(NULL, 111950656, PROT"..., 56) = 56
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, ") = 0x7f02d8688000\n", 19)    = 19
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, "24452 close(3", 13)           = 13
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, ")                          = 0\n", 31) = 31
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+process_vm_readv(24452, [{"\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 16}], 1, [{0x7ffdea7117a0, 16}], 1, 0) = 16
+write(3, "24452 nanosleep({5, 0}, ", 24) = 24
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, "NULL)           = 0\n", 20)   = 20
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, "24452 close(1", 13)           = 13
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, ")                          = 0\n", 31) = 31
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, "24452 close(2", 13)           = 13
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, ")                          = 0\n", 31) = 31
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+wait4(-1, [{WIFSTOPPED(s) && WSTOPSIG(s) == SIGTRAP | 0x80}], __WALL, NULL) = 24452
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_TRAPPED, si_pid=24452, si_uid=1000, si_status=SIGTRAP, si_utime=0, si_stime=0} ---
+ptrace(PTRACE_GETREGSET, 24452, NT_PRSTATUS, [{0x56361d5ed5e0, 216}]) = 0
+write(3, "24452 exit_group(0)             "..., 44) = 44
+ptrace(PTRACE_SYSCALL, 24452, NULL, SIG_0) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], __WALL, NULL) = 24452
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=24452, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+write(3, "24452 +++ exited with 0 +++\n", 28) = 28
+wait4(-1, 0x7ffe2ef11914, __WALL, NULL) = -1 ECHILD (No child processes)
+close(3)                                = 0
+munmap(0x7f70ebb57000, 4096)            = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

@@ -1,0 +1,35 @@
+ocitools generate --tty --output=config.json --uidmappings=0:0:1024 --gidmappings=0:0:1024
+ocitools generate --privileged --tty --output=config.json --uidmappings=0:0:1024 --gidmappings=0:0:1024
+
+ocitools generate --privileged --tty --output=config.json --uidmappings=0:0:1024 --gidmappings=0:0:1024 --root-propagation rshared
+
+ocitools generate --tty --output=config.json --uidmappings=0:0:1024 --gidmappings=0:0:1024 --cap-add audit_read --cap-drop setuid
+ocitools --host-specific generate --tty --output=config.json --uidmappings=0:0:1024 --gidmappings=0:0:1024 --cap-add audit_read --cap-drop setuid
+
+ocitools generate --tty --output=config.json --uidmappings=0:0:1024 --gidmappings=0:0:1024 --cgroups-path integration/test1111
+
+
+ocitools generate --tty --output=config.json --uidmappings=0:0:1024 --gidmappings=0:0:1024 --cgroups-path user.slice:hmeng:test2222 --mount-cgroups ro
+            "memory": {
+                "kernel": 50000000
+            },
+
+runc --systemd-cgroup run 1234
+runc run 1234
+
+
+ocitools generate --output config.json \
+   --oom-score-adj 512  \
+   --linux-cpu-shares 512 \
+   --linux-cpu-period 10000 \
+   --linux-cpu-quota 20000 \
+   --linux-realtime-runtime 35000000 \
+   --linux-realtime-period 343439999 \
+   --linux-cpus 1-3 \
+   --linux-mems 0 \
+   --linux-mem-limit 999000000 \
+   --linux-mem-reservation 6660000 \
+   --linux-mem-swap 1000000000 \
+   --linux-mem-kernel-limit 450000000 \
+   --linux-mem-kernel-tcp 3000000 \
+   --linux-mem-swappiness 30

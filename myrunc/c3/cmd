@@ -1,0 +1,3 @@
+ocitools generate --tty --output=config.json --uidmappings=0:0:1024 --gidmappings=0:0:1024  --output=config.json --pid /proc/32698/ns/pid  --user /proc/32698/ns/user
+ocitools generate --tty --output=config.json --uidmappings=0:0:1024 --gidmappings=0:0:1024  --output=config.json --network /proc/32698/ns/net  --user /proc/32698/ns/user
+ocitools generate --privileged --tty --output=config.json --uidmappings=0:0:1024 --gidmappings=0:0:1024  --output=config.json --pid /proc/32698/ns/pid  --user /proc/32698/ns/user

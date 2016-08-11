@@ -1,0 +1,632 @@
+829:7165  set_robust_list(0x7f110ffff9e0, 24 <unfinished ...>
+831:7165  <... set_robust_list resumed> )   = 0
+833:7165  sigaltstack(NULL,  <unfinished ...>
+835:7165  <... sigaltstack resumed> {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+837:7165  sigaltstack({ss_sp=0xc820106000, ss_flags=0, ss_size=32672},  <unfinished ...>
+839:7165  <... sigaltstack resumed> NULL)   = 0
+842:7165  gettid( <unfinished ...>
+844:7165  <... gettid resumed> )            = 7165
+846:7165  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+848:7165  <... rt_sigprocmask resumed> NULL, 8) = 0
+851:7165  select(0, NULL, NULL, NULL, {0, 100} <unfinished ...>
+889:7165  <... select resumed> )            = 0 (Timeout)
+891:7165  futex(0xc82005cd08, FUTEX_WAKE, 1 <unfinished ...>
+896:7165  <... futex resumed> )             = 1
+899:7165  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+901:7165  <... futex resumed> )             = 1
+903:7165  futex(0xc820029108, FUTEX_WAIT, 0, NULL <unfinished ...>
+905:7165  <... futex resumed> )             = -1 EAGAIN (Resource temporarily unavailable)
+907:7165  select(0, NULL, NULL, NULL, {0, 100} <unfinished ...>
+942:7165  <... select resumed> )            = 0 (Timeout)
+944:7165  futex(0xc82005d108, FUTEX_WAKE, 1 <unfinished ...>
+946:7165  <... futex resumed> )             = 1
+948:7165  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+951:7165  <... futex resumed> )             = 1
+953:7165  futex(0xc820029108, FUTEX_WAIT, 0, NULL <unfinished ...>
+963:7165  <... futex resumed> )             = 0
+965:7165  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+967:7165  <... futex resumed> )             = 0
+969:7165  futex(0xc820029108, FUTEX_WAIT, 0, NULL <unfinished ...>
+975:7165  <... futex resumed> )             = 0
+977:7165  rt_sigaction(SIGCONT, NULL, {SIG_DFL, [], 0}, 8) = 0
+978:7165  rt_sigaction(SIGCONT, {0x47a680, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47a6a0}, NULL, 8) = 0
+979:7165  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+981:7165  <... futex resumed> )             = 1
+983:7165  futex(0xc820029108, FUTEX_WAIT, 0, NULL <unfinished ...>
+986:7165  <... futex resumed> )             = 0
+988:7165  rt_sigaction(SIGTSTP, NULL,  <unfinished ...>
+991:7165  <... rt_sigaction resumed> {SIG_DFL, [], 0}, 8) = 0
+993:7165  rt_sigaction(SIGTSTP, {0x47a680, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47a6a0},  <unfinished ...>
+995:7165  <... rt_sigaction resumed> NULL, 8) = 0
+997:7165  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1000:7165  <... futex resumed> )             = 1
+1002:7165  futex(0xc820029108, FUTEX_WAIT, 0, NULL <unfinished ...>
+1005:7165  <... futex resumed> )             = 0
+1007:7165  rt_sigaction(SIGTTIN, NULL, {SIG_DFL, [], 0}, 8) = 0
+1008:7165  rt_sigaction(SIGTTIN, {0x47a680, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47a6a0}, NULL, 8) = 0
+1009:7165  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1011:7165  <... futex resumed> )             = 1
+1013:7165  futex(0xc820029108, FUTEX_WAIT, 0, NULL <unfinished ...>
+1019:7165  <... futex resumed> )             = 0
+1021:7165  rt_sigaction(SIGTTOU, NULL, {SIG_DFL, [], 0}, 8) = 0
+1022:7165  rt_sigaction(SIGTTOU, {0x47a680, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47a6a0},  <unfinished ...>
+1024:7165  <... rt_sigaction resumed> NULL, 8) = 0
+1026:7165  futex(0xc820029108, FUTEX_WAIT, 0, NULL <unfinished ...>
+1131:7165  <... futex resumed> )             = 0
+1133:7165  futex(0xc820029108, FUTEX_WAIT, 0, NULL <unfinished ...>
+1135:7165  <... futex resumed> )             = -1 EAGAIN (Resource temporarily unavailable)
+1137:7165  select(0, NULL, NULL, NULL, {0, 100} <unfinished ...>
+1171:7165  <... select resumed> )            = 0 (Timeout)
+1173:7165  select(0, NULL, NULL, NULL, {0, 100} <unfinished ...>
+1220:7165  <... select resumed> )            = 0 (Timeout)
+1222:7165  futex(0xc82005cd08, FUTEX_WAKE, 1 <unfinished ...>
+1227:7165  <... futex resumed> )             = 1
+1229:7165  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1231:7165  <... futex resumed> )             = 1
+1233:7165  futex(0xc820029108, FUTEX_WAIT, 0, NULL <unfinished ...>
+1235:7165  <... futex resumed> )             = -1 EAGAIN (Resource temporarily unavailable)
+1237:7165  select(0, NULL, NULL, NULL, {0, 100} <unfinished ...>
+1272:7165  <... select resumed> )            = 0 (Timeout)
+1274:7165  futex(0xc82005d108, FUTEX_WAKE, 1 <unfinished ...>
+1279:7165  <... futex resumed> )             = 1
+1281:7165  futex(0xc82005d108, FUTEX_WAKE, 1 <unfinished ...>
+1284:7165  <... futex resumed> )             = 1
+1286:7165  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1289:7165  <... futex resumed> )             = 1
+1291:7165  futex(0xc820029108, FUTEX_WAIT, 0, NULL <unfinished ...>
+1295:7165  <... futex resumed> )             = 0
+1297:7165  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1299:7165  <... futex resumed> )             = 0
+1301:7165  futex(0xc820029108, FUTEX_WAIT, 0, NULL <unfinished ...>
+1304:7165  <... futex resumed> )             = 0
+1306:7165  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1308:7165  <... futex resumed> )             = 0
+1310:7165  futex(0xc820029108, FUTEX_WAIT, 0, NULL <unfinished ...>
+1316:7165  <... futex resumed> )             = 0
+1318:7165  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1320:7165  <... futex resumed> )             = 0
+1322:7165  futex(0xc820029108, FUTEX_WAIT, 0, NULL <unfinished ...>
+1330:7165  <... futex resumed> )             = 0
+1332:7165  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1334:7165  <... futex resumed> )             = 1
+1336:7165  futex(0xc820029108, FUTEX_WAIT, 0, NULL <unfinished ...>
+1339:7165  <... futex resumed> )             = 0
+1341:7165  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1343:7165  <... futex resumed> )             = 0
+1345:7165  futex(0xc820029108, FUTEX_WAIT, 0, NULL <unfinished ...>
+1348:7165  <... futex resumed> )             = 0
+1350:7165  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1352:7165  <... futex resumed> )             = 0
+1354:7165  futex(0xc820029108, FUTEX_WAIT, 0, NULL <unfinished ...>
+1360:7165  <... futex resumed> )             = 0
+1362:7165  select(0, NULL, NULL, NULL, {0, 100} <unfinished ...>
+1386:7165  <... select resumed> )            = 0 (Timeout)
+1388:7165  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1401:7165  <... futex resumed> )             = 1
+1403:7165  futex(0xc820029108, FUTEX_WAIT, 0, NULL <unfinished ...>
+1495:7165  <... futex resumed> )             = 0
+1497:7165  futex(0xc4d208, FUTEX_WAKE, 1 <unfinished ...>
+1499:7165  <... futex resumed> )             = 0
+1501:7165  futex(0xc820029108, FUTEX_WAIT, 0, NULL <unfinished ...>
+1507:7165  <... futex resumed> )             = 0
+1510:7165  openat(AT_FDCWD, "freezer.state", O_RDONLY|O_CLOEXEC <unfinished ...>
+1512:7165  <... openat resumed> )            = -1 ENOENT (No such file or directory)
+1513:7165  socketpair(AF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC, 0, [5, 6]) = 0
+1515:7165  openat(AT_FDCWD, "/run/runc/test", O_RDONLY|O_CLOEXEC <unfinished ...>
+1518:7165  <... openat resumed> )            = 7
+1520:7165  mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1117555000
+1523:7165  getpid()                          = 7159
+1524:7165  capget({_LINUX_CAPABILITY_VERSION_3, 0}, {1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_DAC_READ_SEARCH|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_LINUX_IMMUTABLE|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_BROADCAST|1<<CAP_NET_ADMIN|1<<CAP_NET_RAW|1<<CAP_IPC_LOCK|1<<CAP_IPC_OWNER|1<<CAP_SYS_MODULE|1<<CAP_SYS_RAWIO|1<<CAP_SYS_CHROOT|1<<CAP_SYS_PTRACE|1<<CAP_SYS_PACCT|1<<CAP_SYS_ADMIN|1<<CAP_SYS_BOOT|1<<CAP_SYS_NICE|1<<CAP_SYS_RESOURCE|1<<CAP_SYS_TIME|1<<CAP_SYS_TTY_CONFIG|1<<CAP_MKNOD|1<<CAP_LEASE|1<<CAP_AUDIT_WRITE|1<<CAP_AUDIT_CONTROL|1<<CAP_SETFCAP|1<<CAP_MAC_OVERRIDE|1<<CAP_MAC_ADMIN|1<<CAP_SYSLOG|1<<CAP_WAKE_ALARM|1<<CAP_BLOCK_SUSPEND|1<<CAP_AUDIT_READ, 1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_DAC_READ_SEARCH|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_LINUX_IMMUTABLE|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_BROADCAST|1<<CAP_NET_ADMIN|1<<CAP_NET_RAW|1<<CAP_IPC_LOCK|1<<CAP_IPC_OWNER|1<<CAP_SYS_MODULE|1<<CAP_SYS_RAWIO|1<<CAP_SYS_CHROOT|1<<CAP_SYS_PTRACE|1<<CAP_SYS_PACCT|1<<CAP_SYS_ADMIN|1<<CAP_SYS_BOOT|1<<CAP_SYS_NICE|1<<CAP_SYS_RESOURCE|1<<CAP_SYS_TIME|1<<CAP_SYS_TTY_CONFIG|1<<CAP_MKNOD|1<<CAP_LEASE|1<<CAP_AUDIT_WRITE|1<<CAP_AUDIT_CONTROL|1<<CAP_SETFCAP|1<<CAP_MAC_OVERRIDE|1<<CAP_MAC_ADMIN|1<<CAP_SYSLOG|1<<CAP_WAKE_ALARM|1<<CAP_BLOCK_SUSPEND|1<<CAP_AUDIT_READ, 0}) = 0
+1526:7165  openat(AT_FDCWD, "/proc/7159/status", O_RDONLY|O_CLOEXEC <unfinished ...>
+1528:7165  <... openat resumed> )            = 8
+1529:7165  read(8, "Name:\trunc\nState:\tS (sleeping)\nT"..., 4096) = 1092
+1536:7165  close(8 <unfinished ...>
+1538:7165  <... close resumed> )             = 0
+1540:7165  openat(AT_FDCWD, "/dev/null", O_RDONLY|O_CLOEXEC <unfinished ...>
+1542:7165  <... openat resumed> )            = 8
+1544:7165  openat(AT_FDCWD, "/dev/null", O_WRONLY|O_CLOEXEC) = 9
+1545:7165  openat(AT_FDCWD, "/dev/null", O_WRONLY|O_CLOEXEC) = 10
+1546:7165  pipe2( <unfinished ...>
+1548:7165  <... pipe2 resumed> [11, 12], O_CLOEXEC) = 0
+1550:7165  getpid()                          = 7159
+1551:7165  clone( <unfinished ...>
+1554:7165  <... clone resumed> child_stack=0, flags=SIGCHLD) = 7168
+1556:7165  close(12)                         = 0
+1558:7165  read(11,  <unfinished ...>
+1569:7165  <... read resumed> "", 8)         = 0
+1571:7165  close(11 <unfinished ...>
+1573:7165  <... close resumed> )             = 0
+1577:7165  close(8)                          = 0
+1579:7165  close(9 <unfinished ...>
+1581:7165  <... close resumed> )             = 0
+1583:7165  close(10 <unfinished ...>
+1585:7165  <... close resumed> )             = 0
+1587:7165  close(5 <unfinished ...>
+1589:7165  <... close resumed> )             = 0
+1591:7165  close(7 <unfinished ...>
+1593:7165  <... close resumed> )             = 0
+1597:7165  write(6, "8\0\0\0000\362\1\0\1\0\0\0\0\0\0\0\10\0\221j\0\0\2|\16\0\224j0 0 "..., 56 <unfinished ...>
+1601:7165  <... write resumed> )             = 56
+1603:7165  wait4(7168,  <unfinished ...>
+1710:7165  <... wait4 resumed> [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, {ru_utime={0, 0}, ru_stime={0, 2054}, ...}) = 7168
+1717:7165  read(6,  <unfinished ...>
+1719:7165  <... read resumed> "{ \"pid\" : 7170 }\n", 512) = 17
+1727:7165  readlinkat(AT_FDCWD, "/proc/7170/fd/0",  <unfinished ...>
+1730:7165  <... readlinkat resumed> "/dev/null", 128) = 9
+1732:7165  readlinkat(AT_FDCWD, "/proc/7170/fd/1",  <unfinished ...>
+1734:7165  <... readlinkat resumed> "/dev/null", 128) = 9
+1735:7165  readlinkat(AT_FDCWD, "/proc/7170/fd/2", "/dev/null", 128) = 9
+1736:7165  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC <unfinished ...>
+1739:7165  <... openat resumed> )            = 5
+1741:7165  read(5,  <unfinished ...>
+1743:7165  <... read resumed> "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+1746:7165  close(5 <unfinished ...>
+1749:7165  <... close resumed> )             = 0
+1752:7165  stat("/sys/fs/cgroup",  <unfinished ...>
+1754:7165  <... stat resumed> {st_mode=S_IFDIR|0755, st_size=340, ...}) = 0
+1757:7165  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC <unfinished ...>
+1760:7165  <... openat resumed> )            = 5
+1763:7165  read(5,  <unfinished ...>
+1765:7165  <... read resumed> "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+1767:7165  read(5, "", 3896)                 = 0
+1768:7165  close(5)                          = 0
+1769:7165  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+1770:7165  read(5,  <unfinished ...>
+1773:7165  <... read resumed> "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+1779:7165  close(5 <unfinished ...>
+1781:7165  <... close resumed> )             = 0
+1782:7165  stat("/sys/fs/cgroup/cpuset/user.slice",  <unfinished ...>
+1784:7165  <... stat resumed> {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+1786:7165  openat(AT_FDCWD, "/sys/fs/cgroup/cpuset/user.slice/cpuset.cpus", O_RDONLY|O_CLOEXEC <unfinished ...>
+1788:7165  <... openat resumed> )            = 5
+1790:7165  fstat(5,  <unfinished ...>
+1792:7165  <... fstat resumed> {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+1794:7165  read(5,  <unfinished ...>
+1797:7165  <... read resumed> "0-3\n", 512)  = 4
+1800:7165  read(5,  <unfinished ...>
+1802:7165  <... read resumed> "", 1532)      = 0
+1804:7165  close(5 <unfinished ...>
+1806:7165  <... close resumed> )             = 0
+1808:7165  openat(AT_FDCWD, "/sys/fs/cgroup/cpuset/user.slice/cpuset.mems", O_RDONLY|O_CLOEXEC <unfinished ...>
+1811:7165  <... openat resumed> )            = 5
+1813:7165  fstat(5,  <unfinished ...>
+1815:7165  <... fstat resumed> {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+1817:7165  read(5,  <unfinished ...>
+1819:7165  <... read resumed> "0\n", 512)    = 2
+1821:7165  read(5,  <unfinished ...>
+1823:7165  <... read resumed> "", 1534)      = 0
+1825:7165  close(5 <unfinished ...>
+1827:7165  <... close resumed> )             = 0
+1829:7165  openat(AT_FDCWD, "/sys/fs/cgroup/cpuset/cpuset.cpus", O_RDONLY|O_CLOEXEC <unfinished ...>
+1831:7165  <... openat resumed> )            = 5
+1833:7165  fstat(5,  <unfinished ...>
+1835:7165  <... fstat resumed> {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+1837:7165  read(5,  <unfinished ...>
+1839:7165  <... read resumed> "0-3\n", 512)  = 4
+1842:7165  read(5,  <unfinished ...>
+1844:7165  <... read resumed> "", 1532)      = 0
+1846:7165  close(5 <unfinished ...>
+1848:7165  <... close resumed> )             = 0
+1850:7165  openat(AT_FDCWD, "/sys/fs/cgroup/cpuset/cpuset.mems", O_RDONLY|O_CLOEXEC <unfinished ...>
+1853:7165  <... openat resumed> )            = 5
+1855:7165  fstat(5,  <unfinished ...>
+1857:7165  <... fstat resumed> {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+1859:7165  read(5,  <unfinished ...>
+1861:7165  <... read resumed> "0\n", 512)    = 2
+1863:7165  read(5,  <unfinished ...>
+1865:7165  <... read resumed> "", 1534)      = 0
+1867:7165  close(5 <unfinished ...>
+1869:7165  <... close resumed> )             = 0
+1871:7165  stat("/sys/fs/cgroup/cpuset/user.slice/test",  <unfinished ...>
+1875:7165  <... stat resumed> 0xc82013e5e8)  = -1 ENOENT (No such file or directory)
+1877:7165  stat("/sys/fs/cgroup/cpuset/user.slice",  <unfinished ...>
+1879:7165  <... stat resumed> {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+1881:7165  mkdirat(AT_FDCWD, "/sys/fs/cgroup/cpuset/user.slice/test", 0755 <unfinished ...>
+1892:7165  <... mkdirat resumed> )           = 0
+1894:7165  openat(AT_FDCWD, "/sys/fs/cgroup/cpuset/user.slice/test/cpuset.cpus", O_RDONLY|O_CLOEXEC <unfinished ...>
+1896:7165  <... openat resumed> )            = 5
+1898:7165  fstat(5,  <unfinished ...>
+1900:7165  <... fstat resumed> {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+1902:7165  read(5,  <unfinished ...>
+1904:7165  <... read resumed> "\n", 512)     = 1
+1906:7165  read(5,  <unfinished ...>
+1908:7165  <... read resumed> "", 1535)      = 0
+1910:7165  close(5 <unfinished ...>
+1912:7165  <... close resumed> )             = 0
+1914:7165  openat(AT_FDCWD, "/sys/fs/cgroup/cpuset/user.slice/test/cpuset.mems", O_RDONLY|O_CLOEXEC <unfinished ...>
+1917:7165  <... openat resumed> )            = 5
+1919:7165  fstat(5,  <unfinished ...>
+1921:7165  <... fstat resumed> {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+1923:7165  read(5,  <unfinished ...>
+1925:7165  <... read resumed> "\n", 512)     = 1
+1928:7165  read(5,  <unfinished ...>
+1930:7165  <... read resumed> "", 1535)      = 0
+1932:7165  close(5 <unfinished ...>
+1934:7165  <... close resumed> )             = 0
+1936:7165  openat(AT_FDCWD, "/sys/fs/cgroup/cpuset/user.slice/cpuset.cpus", O_RDONLY|O_CLOEXEC <unfinished ...>
+1939:7165  <... openat resumed> )            = 5
+1941:7165  fstat(5,  <unfinished ...>
+1943:7165  <... fstat resumed> {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+1945:7165  read(5,  <unfinished ...>
+1947:7165  <... read resumed> "0-3\n", 512)  = 4
+1949:7165  read(5,  <unfinished ...>
+1951:7165  <... read resumed> "", 1532)      = 0
+1953:7165  close(5 <unfinished ...>
+1955:7165  <... close resumed> )             = 0
+1957:7165  openat(AT_FDCWD, "/sys/fs/cgroup/cpuset/user.slice/cpuset.mems", O_RDONLY|O_CLOEXEC <unfinished ...>
+1959:7165  <... openat resumed> )            = 5
+1961:7165  fstat(5,  <unfinished ...>
+1963:7165  <... fstat resumed> {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+1965:7165  read(5,  <unfinished ...>
+1967:7165  <... read resumed> "0\n", 512)    = 2
+1969:7165  read(5,  <unfinished ...>
+1971:7165  <... read resumed> "", 1534)      = 0
+1973:7165  close(5 <unfinished ...>
+1975:7165  <... close resumed> )             = 0
+1977:7165  openat(AT_FDCWD, "/sys/fs/cgroup/cpuset/user.slice/test/cpuset.cpus", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700 <unfinished ...>
+1979:7165  <... openat resumed> )            = 5
+1981:7165  write(5, "0-3\n", 4 <unfinished ...>
+1987:7165  <... write resumed> )             = 4
+1989:7165  close(5 <unfinished ...>
+1991:7165  <... close resumed> )             = 0
+1993:7165  openat(AT_FDCWD, "/sys/fs/cgroup/cpuset/user.slice/test/cpuset.mems", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700 <unfinished ...>
+1995:7165  <... openat resumed> )            = 5
+1997:7165  write(5, "0\n", 2 <unfinished ...>
+1999:7165  <... write resumed> )             = 2
+2001:7165  close(5 <unfinished ...>
+2003:7165  <... close resumed> )             = 0
+2005:7165  openat(AT_FDCWD, "/sys/fs/cgroup/cpuset/user.slice/test/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700 <unfinished ...>
+2008:7165  <... openat resumed> )            = 5
+2010:7165  write(5, "7170", 4 <unfinished ...>
+2653:7165  <... write resumed> )             = 4
+2654:7165  close(5)                          = 0
+2655:7165  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2656:7165  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2657:7165  read(5, "", 3896)                 = 0
+2658:7165  close(5)                          = 0
+2659:7165  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2660:7165  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2661:7165  close(5)                          = 0
+2662:7165  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2663:7165  read(5,  <unfinished ...>
+2665:7165  <... read resumed> "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2667:7165  read(5, "", 3896)                 = 0
+2668:7165  close(5)                          = 0
+2669:7165  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2670:7165  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2671:7165  close(5)                          = 0
+2672:7165  stat("/sys/fs/cgroup/devices/user.slice/test", 0xc82013eac8) = -1 ENOENT (No such file or directory)
+2673:7165  stat("/sys/fs/cgroup/devices/user.slice", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+2674:7165  mkdirat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/test", 0755) = 0
+2675:7165  openat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/test/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+2676:7165  write(5, "7170", 4)               = 4
+2677:7165  close(5)                          = 0
+2678:7165  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2679:7165  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2680:7165  read(5, "", 3896)                 = 0
+2681:7165  close(5)                          = 0
+2682:7165  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2683:7165  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2684:7165  close(5)                          = 0
+2685:7165  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2686:7165  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2687:7165  read(5, "", 3896)                 = 0
+2689:7165  close(5 <unfinished ...>
+2691:7165  <... close resumed> )             = 0
+2692:7165  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2693:7165  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2694:7165  close(5)                          = 0
+2695:7165  stat("/sys/fs/cgroup/memory/user.slice/test", 0xc82013ec68) = -1 ENOENT (No such file or directory)
+2696:7165  stat("/sys/fs/cgroup/memory/user.slice/test", 0xc82013ed38) = -1 ENOENT (No such file or directory)
+2697:7165  stat("/sys/fs/cgroup/memory/user.slice", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+2698:7165  mkdirat(AT_FDCWD, "/sys/fs/cgroup/memory/user.slice/test", 0755) = 0
+2699:7165  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2700:7165  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2701:7165  read(5, "", 3896)                 = 0
+2702:7165  close(5)                          = 0
+2703:7165  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2704:7165  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2705:7165  close(5)                          = 0
+2706:7165  stat("/sys/fs/cgroup/memory/user.slice/test", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+2707:7165  openat(AT_FDCWD, "/sys/fs/cgroup/memory/user.slice/test/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+2708:7165  write(5, "7170", 4)               = 4
+2709:7165  close(5)                          = 0
+2710:7165  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2711:7165  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2712:7165  read(5, "", 3896)                 = 0
+2713:7165  close(5)                          = 0
+2714:7165  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2715:7165  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2716:7165  close(5)                          = 0
+2717:7165  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2718:7165  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2719:7165  read(5, "", 3896)                 = 0
+2720:7165  close(5)                          = 0
+2721:7165  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2722:7165  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2723:7165  close(5)                          = 0
+2724:7165  stat("/sys/fs/cgroup/cpu,cpuacct/user.slice/test", 0xc82013efa8) = -1 ENOENT (No such file or directory)
+2725:7165  stat("/sys/fs/cgroup/cpu,cpuacct/user.slice", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+2726:7165  mkdirat(AT_FDCWD, "/sys/fs/cgroup/cpu,cpuacct/user.slice/test", 0755) = 0
+2727:7165  openat(AT_FDCWD, "/sys/fs/cgroup/cpu,cpuacct/user.slice/test/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+2728:7165  write(5, "7170", 4)               = 4
+2729:7165  close(5)                          = 0
+2730:7165  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2731:7165  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2732:7165  read(5, "", 3896)                 = 0
+2733:7165  close(5)                          = 0
+2734:7165  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2735:7165  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2736:7165  close(5)                          = 0
+2737:7165  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2738:7165  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2739:7165  read(5, "", 3896)                 = 0
+2740:7165  close(5)                          = 0
+2741:7165  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2742:7165  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2743:7165  close(5)                          = 0
+2744:7165  stat("/sys/fs/cgroup/cpu,cpuacct/user.slice/test", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+2745:7165  openat(AT_FDCWD, "/sys/fs/cgroup/cpu,cpuacct/user.slice/test/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+2746:7165  write(5, "7170", 4)               = 4
+2747:7165  close(5 <unfinished ...>
+2749:7165  <... close resumed> )             = 0
+2751:7165  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2752:7165  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2753:7165  read(5, "", 3896)                 = 0
+2754:7165  close(5)                          = 0
+2755:7165  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2756:7165  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2757:7165  close(5)                          = 0
+2758:7165  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2759:7165  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2760:7165  read(5, "", 3896)                 = 0
+2761:7165  close(5)                          = 0
+2762:7165  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2763:7165  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2764:7165  close(5)                          = 0
+2765:7165  stat("/sys/fs/cgroup/pids/user.slice/test", 0xc82013f218) = -1 ENOENT (No such file or directory)
+2766:7165  stat("/sys/fs/cgroup/pids/user.slice", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+2767:7165  mkdirat(AT_FDCWD, "/sys/fs/cgroup/pids/user.slice/test", 0755) = 0
+2768:7165  openat(AT_FDCWD, "/sys/fs/cgroup/pids/user.slice/test/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+2769:7165  write(5, "7170", 4)               = 4
+2770:7165  close(5)                          = 0
+2771:7165  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2772:7165  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2773:7165  read(5, "", 3896)                 = 0
+2774:7165  close(5)                          = 0
+2775:7165  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2776:7165  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2777:7165  close(5)                          = 0
+2778:7165  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2779:7165  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2780:7165  read(5, "", 3896)                 = 0
+2781:7165  close(5)                          = 0
+2782:7165  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2783:7165  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2784:7165  close(5)                          = 0
+2785:7165  stat("/sys/fs/cgroup/blkio/user.slice/test", 0xc82013f3b8) = -1 ENOENT (No such file or directory)
+2786:7165  stat("/sys/fs/cgroup/blkio/user.slice", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+2787:7165  mkdirat(AT_FDCWD, "/sys/fs/cgroup/blkio/user.slice/test", 0755) = 0
+2788:7165  openat(AT_FDCWD, "/sys/fs/cgroup/blkio/user.slice/test/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+2789:7165  write(5, "7170", 4)               = 4
+2790:7165  close(5)                          = 0
+2791:7165  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2792:7165  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2793:7165  read(5, "", 3896)                 = 0
+2794:7165  close(5)                          = 0
+2795:7165  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2796:7165  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2797:7165  close(5)                          = 0
+2798:7165  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2799:7165  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2800:7165  read(5, "", 3896)                 = 0
+2801:7165  close(5)                          = 0
+2802:7165  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2803:7165  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2804:7165  close(5)                          = 0
+2805:7165  stat("/sys/fs/cgroup/hugetlb/user.slice/test", 0xc82013f558) = -1 ENOENT (No such file or directory)
+2806:7165  stat("/sys/fs/cgroup/hugetlb/user.slice", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+2807:7165  mkdirat(AT_FDCWD, "/sys/fs/cgroup/hugetlb/user.slice/test", 0755) = 0
+2808:7165  openat(AT_FDCWD, "/sys/fs/cgroup/hugetlb/user.slice/test/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+2809:7165  write(5, "7170", 4)               = 4
+2810:7165  close(5)                          = 0
+2811:7165  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2812:7165  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2813:7165  read(5, "", 3896)                 = 0
+2814:7165  close(5)                          = 0
+2815:7165  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2816:7165  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2817:7165  close(5)                          = 0
+2818:7165  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2819:7165  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2820:7165  read(5, "", 3896)                 = 0
+2821:7165  close(5)                          = 0
+2822:7165  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2823:7165  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2824:7165  close(5)                          = 0
+2825:7165  stat("/sys/fs/cgroup/net_cls,net_prio/user.slice/test", 0xc82013f6f8) = -1 ENOENT (No such file or directory)
+2826:7165  stat("/sys/fs/cgroup/net_cls,net_prio/user.slice", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+2827:7165  mkdirat(AT_FDCWD, "/sys/fs/cgroup/net_cls,net_prio/user.slice/test", 0755) = 0
+2828:7165  openat(AT_FDCWD, "/sys/fs/cgroup/net_cls,net_prio/user.slice/test/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+2829:7165  write(5, "7170", 4)               = 4
+2830:7165  close(5)                          = 0
+2831:7165  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2832:7165  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2833:7165  read(5, "", 3896)                 = 0
+2834:7165  close(5)                          = 0
+2835:7165  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2836:7165  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2837:7165  close(5)                          = 0
+2838:7165  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2839:7165  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2840:7165  read(5, "", 3896)                 = 0
+2841:7165  close(5)                          = 0
+2842:7165  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2843:7165  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2844:7165  close(5)                          = 0
+2845:7165  stat("/sys/fs/cgroup/net_cls,net_prio/user.slice/test", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+2846:7165  openat(AT_FDCWD, "/sys/fs/cgroup/net_cls,net_prio/user.slice/test/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+2847:7165  write(5, "7170", 4)               = 4
+2848:7165  close(5)                          = 0
+2849:7165  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2850:7165  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2851:7165  read(5, "", 3896)                 = 0
+2852:7165  close(5)                          = 0
+2853:7165  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2854:7165  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2855:7165  close(5)                          = 0
+2856:7165  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2858:7165  read(5,  <unfinished ...>
+2860:7165  <... read resumed> "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2861:7165  read(5, "", 3896)                 = 0
+2862:7165  close(5)                          = 0
+2863:7165  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2864:7165  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2865:7165  close(5)                          = 0
+2866:7165  stat("/sys/fs/cgroup/perf_event/user.slice/test", 0xc82013f968) = -1 ENOENT (No such file or directory)
+2867:7165  stat("/sys/fs/cgroup/perf_event/user.slice", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+2868:7165  mkdirat(AT_FDCWD, "/sys/fs/cgroup/perf_event/user.slice/test", 0755) = 0
+2869:7165  openat(AT_FDCWD, "/sys/fs/cgroup/perf_event/user.slice/test/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+2870:7165  write(5, "7170", 4)               = 4
+2871:7165  close(5)                          = 0
+2872:7165  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2873:7165  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2874:7165  read(5, "", 3896)                 = 0
+2875:7165  close(5)                          = 0
+2876:7165  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2877:7165  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2878:7165  close(5)                          = 0
+2879:7165  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2880:7165  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2881:7165  read(5, "", 3896)                 = 0
+2882:7165  close(5)                          = 0
+2883:7165  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2884:7165  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2885:7165  close(5)                          = 0
+2886:7165  stat("/sys/fs/cgroup/freezer/user.slice/test", 0xc82013fb08) = -1 ENOENT (No such file or directory)
+2887:7165  stat("/sys/fs/cgroup/freezer/user.slice", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+2888:7165  mkdirat(AT_FDCWD, "/sys/fs/cgroup/freezer/user.slice/test", 0755) = 0
+2889:7165  openat(AT_FDCWD, "/sys/fs/cgroup/freezer/user.slice/test/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+2890:7165  write(5, "7170", 4)               = 4
+2891:7165  close(5)                          = 0
+2892:7165  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2893:7165  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2894:7165  read(5, "", 3896)                 = 0
+2895:7165  close(5)                          = 0
+2896:7165  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2897:7165  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2898:7165  close(5)                          = 0
+2899:7165  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2900:7165  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2901:7165  read(5, "", 3896)                 = 0
+2902:7165  close(5)                          = 0
+2903:7165  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2904:7165  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2905:7165  close(5)                          = 0
+2906:7165  stat("/sys/fs/cgroup/systemd/user.slice/test", 0xc82013fca8) = -1 ENOENT (No such file or directory)
+2907:7165  stat("/sys/fs/cgroup/systemd/user.slice", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+2908:7165  mkdirat(AT_FDCWD, "/sys/fs/cgroup/systemd/user.slice/test", 0755) = 0
+2909:7165  openat(AT_FDCWD, "/sys/fs/cgroup/systemd/user.slice/test/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+2910:7165  write(5, "7170", 4)               = 4
+2911:7165  close(5)                          = 0
+2912:7165  openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC) = 5
+2913:7165  read(5, "11:hugetlb:/\n10:pids:/\n9:perf_ev"..., 4096) = 200
+2914:7165  read(5, "", 3896)                 = 0
+2915:7165  close(5)                          = 0
+2916:7165  openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY|O_CLOEXEC) = 5
+2917:7165  read(5, "18 62 0:18 / /sys rw,nosuid,node"..., 4096) = 3455
+2918:7165  close(5)                          = 0
+2919:7165  write(6, "{\"args\":[\"cat\",\"/etc/passwd\"],\"e"..., 7427) = 7427
+2921:7165  read(6,  <unfinished ...>
+2988:7165  <... read resumed> "{\"type\":1}", 512) = 10
+2989:7165  read(6,  <unfinished ...>
+3000:7165  <... read resumed> "{\"Timestamp\":\"2016-07-18T20:38:3"..., 512) = 512
+3002:7165  read(6,  <unfinished ...>
+3006:7165  <... read resumed> "LinuxFactory)\",\"Line\":302},{\"Fil"..., 1024) = 804
+3012:7165  openat(AT_FDCWD, "/etc/localtime", O_RDONLY) = 5
+3013:7165  read(5, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0\5\0\0\0\0"..., 4096) = 3545
+3014:7165  mmap(0xc820200000, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xc820200000
+3015:7165  mmap(0xc81ffe8000, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xc81ffe8000
+3016:7165  read(5, "", 4096)                 = 0
+3017:7165  close(5)                          = 0
+3018:7165  close(6)                          = 0
+3019:7165  kill(7170, SIGKILL)               = 0
+3020:7165  wait4(7170,  <unfinished ...>
+3033:7165  <... wait4 resumed> [{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, {ru_utime={0, 1065}, ru_stime={0, 5326}, ...}) = 7170
+3035:7165  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=7170, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+3038:7165  futex(0xc68440, FUTEX_WAKE, 1 <unfinished ...>
+3040:7165  <... futex resumed> )             = 1
+3042:7165  rt_sigreturn({mask=[]})           = 7170
+3050:7165  write(3, "\33[33mWARN\33[0m[0000] exit status "..., 66) = 66
+3051:7165  unlinkat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/test", 0 <unfinished ...>
+3054:7165  <... unlinkat resumed> )          = -1 EISDIR (Is a directory)
+3055:7165  unlinkat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/test", AT_REMOVEDIR) = 0
+3056:7165  stat("/sys/fs/cgroup/devices/user.slice/test", 0xc820206108) = -1 ENOENT (No such file or directory)
+3058:7165  unlinkat(AT_FDCWD, "/sys/fs/cgroup/memory/user.slice/test", 0 <unfinished ...>
+3060:7165  <... unlinkat resumed> )          = -1 EISDIR (Is a directory)
+3061:7165  unlinkat(AT_FDCWD, "/sys/fs/cgroup/memory/user.slice/test", AT_REMOVEDIR) = 0
+3062:7165  stat("/sys/fs/cgroup/memory/user.slice/test", 0xc8202061d8) = -1 ENOENT (No such file or directory)
+3063:7165  unlinkat(AT_FDCWD, "/sys/fs/cgroup/cpu,cpuacct/user.slice/test", 0 <unfinished ...>
+3065:7165  <... unlinkat resumed> )          = -1 EISDIR (Is a directory)
+3067:7165  unlinkat(AT_FDCWD, "/sys/fs/cgroup/cpu,cpuacct/user.slice/test", AT_REMOVEDIR) = 0
+3068:7165  stat("/sys/fs/cgroup/cpu,cpuacct/user.slice/test", 0xc8202062a8) = -1 ENOENT (No such file or directory)
+3069:7165  unlinkat(AT_FDCWD, "/sys/fs/cgroup/perf_event/user.slice/test", 0) = -1 EISDIR (Is a directory)
+3071:7165  unlinkat(AT_FDCWD, "/sys/fs/cgroup/perf_event/user.slice/test", AT_REMOVEDIR <unfinished ...>
+3073:7165  <... unlinkat resumed> )          = 0
+3074:7165  stat("/sys/fs/cgroup/perf_event/user.slice/test", 0xc820206378) = -1 ENOENT (No such file or directory)
+3075:7165  unlinkat(AT_FDCWD, "/sys/fs/cgroup/freezer/user.slice/test", 0) = -1 EISDIR (Is a directory)
+3076:7165  unlinkat(AT_FDCWD, "/sys/fs/cgroup/freezer/user.slice/test", AT_REMOVEDIR <unfinished ...>
+3079:7165  <... unlinkat resumed> )          = 0
+3080:7165  stat("/sys/fs/cgroup/freezer/user.slice/test", 0xc820206448) = -1 ENOENT (No such file or directory)
+3081:7165  unlinkat(AT_FDCWD, "/sys/fs/cgroup/systemd/user.slice/test", 0) = -1 EISDIR (Is a directory)
+3082:7165  unlinkat(AT_FDCWD, "/sys/fs/cgroup/systemd/user.slice/test", AT_REMOVEDIR) = 0
+3083:7165  stat("/sys/fs/cgroup/systemd/user.slice/test",  <unfinished ...>
+3085:7165  <... stat resumed> 0xc820206518)  = -1 ENOENT (No such file or directory)
+3088:7165  unlinkat(AT_FDCWD, "/sys/fs/cgroup/cpuset/user.slice/test", 0) = -1 EISDIR (Is a directory)
+3089:7165  unlinkat(AT_FDCWD, "/sys/fs/cgroup/cpuset/user.slice/test", AT_REMOVEDIR) = 0
+3090:7165  stat("/sys/fs/cgroup/cpuset/user.slice/test",  <unfinished ...>
+3092:7165  <... stat resumed> 0xc8202065e8)  = -1 ENOENT (No such file or directory)
+3094:7165  unlinkat(AT_FDCWD, "/sys/fs/cgroup/pids/user.slice/test", 0) = -1 EISDIR (Is a directory)
+3095:7165  unlinkat(AT_FDCWD, "/sys/fs/cgroup/pids/user.slice/test", AT_REMOVEDIR) = 0
+3096:7165  stat("/sys/fs/cgroup/pids/user.slice/test", 0xc8202066b8) = -1 ENOENT (No such file or directory)
+3098:7165  unlinkat(AT_FDCWD, "/sys/fs/cgroup/blkio/user.slice/test", 0 <unfinished ...>
+3100:7165  <... unlinkat resumed> )          = -1 EISDIR (Is a directory)
+3101:7165  unlinkat(AT_FDCWD, "/sys/fs/cgroup/blkio/user.slice/test", AT_REMOVEDIR) = 0
+3102:7165  stat("/sys/fs/cgroup/blkio/user.slice/test",  <unfinished ...>
+3104:7165  <... stat resumed> 0xc820206788)  = -1 ENOENT (No such file or directory)
+3106:7165  unlinkat(AT_FDCWD, "/sys/fs/cgroup/hugetlb/user.slice/test", 0) = -1 EISDIR (Is a directory)
+3107:7165  unlinkat(AT_FDCWD, "/sys/fs/cgroup/hugetlb/user.slice/test", AT_REMOVEDIR) = 0
+3108:7165  stat("/sys/fs/cgroup/hugetlb/user.slice/test", 0xc820206858) = -1 ENOENT (No such file or directory)
+3109:7165  unlinkat(AT_FDCWD, "/sys/fs/cgroup/net_cls,net_prio/user.slice/test", 0 <unfinished ...>
+3111:7165  <... unlinkat resumed> )          = -1 EISDIR (Is a directory)
+3113:7165  unlinkat(AT_FDCWD, "/sys/fs/cgroup/net_cls,net_prio/user.slice/test", AT_REMOVEDIR) = 0
+3114:7165  stat("/sys/fs/cgroup/net_cls,net_prio/user.slice/test", 0xc820206928) = -1 ENOENT (No such file or directory)
+3115:7165  unlinkat(AT_FDCWD, "/sys/fs/cgroup/net_cls,net_prio/user.slice/test", 0) = -1 ENOENT (No such file or directory)
+3116:7165  unlinkat(AT_FDCWD, "/sys/fs/cgroup/net_cls,net_prio/user.slice/test", AT_REMOVEDIR <unfinished ...>
+3118:7165  <... unlinkat resumed> )          = -1 ENOENT (No such file or directory)
+3120:7165  stat("/sys/fs/cgroup/net_cls,net_prio/user.slice/test", 0xc8202069f8) = -1 ENOENT (No such file or directory)
+3121:7165  unlinkat(AT_FDCWD, "/sys/fs/cgroup/cpu,cpuacct/user.slice/test", 0) = -1 ENOENT (No such file or directory)
+3122:7165  unlinkat(AT_FDCWD, "/sys/fs/cgroup/cpu,cpuacct/user.slice/test", AT_REMOVEDIR) = -1 ENOENT (No such file or directory)
+3123:7165  stat("/sys/fs/cgroup/cpu,cpuacct/user.slice/test", 0xc820206ac8) = -1 ENOENT (No such file or directory)
+3125:7165  unlinkat(AT_FDCWD, "/run/runc/test", 0) = -1 EISDIR (Is a directory)
+3126:7165  unlinkat(AT_FDCWD, "/run/runc/test", AT_REMOVEDIR <unfinished ...>
+3128:7165  <... unlinkat resumed> )          = -1 ENOTEMPTY (Directory not empty)
+3129:7165  lstat("/run/runc/test", {st_mode=S_IFDIR|0711, st_size=60, ...}) = 0
+3130:7165  openat(AT_FDCWD, "/run/runc/test", O_RDONLY|O_CLOEXEC) = 5
+3131:7165  getdents64(5, /* 3 entries */, 4096) = 80
+3132:7165  getdents64(5,  <unfinished ...>
+3134:7165  <... getdents64 resumed> /* 0 entries */, 4096) = 0
+3136:7165  unlinkat(AT_FDCWD, "/run/runc/test/exec.fifo", 0) = 0
+3137:7165  getdents64(5, /* 0 entries */, 4096) = 0
+3138:7165  close(5)                          = 0
+3139:7165  unlinkat(AT_FDCWD, "/run/runc/test", 0) = -1 EISDIR (Is a directory)
+3140:7165  unlinkat(AT_FDCWD, "/run/runc/test", AT_REMOVEDIR <unfinished ...>
+3142:7165  <... unlinkat resumed> )          = 0
+3144:7165  close(4)                          = 0
+3145:7165  ioctl(0, SNDCTL_TMR_START or TCSETS, {B38400 opost isig icanon echo ...}) = 0
+3146:7165  ioctl(0, TCGETS <unfinished ...>
+3148:7165  <... ioctl resumed> , {B38400 opost isig icanon echo ...}) = 0
+3150:7165  write(3, "\33[31mERRO\33[0m[0000] rootfs_linux"..., 85) = 85
+3151:7165  write(2, "rootfs_linux.go:42: preparing ro"..., 64) = 64
+3152:7165  exit_group(1)                     = ?
+3156:7165  +++ exited with 1 +++

@@ -1,0 +1,37 @@
+I started a runc container first, then started another container.  The second
+container tried to join the `user` and `pid` namespace of the first container.
+
+The first container got started successfully, however, the second container was
+failed to be started with the following error:
+
+    [hmeng@localhost c2]$ sudo $(which runc) run test1
+    process_linux.go:245: running exec setns process for init caused "exit status 1"
+
+The strace log of the second container shows that `setns` failed to join the
+user namespace of the first container.
+
+Here is `config.json` of the first container:
+Here is `config.json` of the second container:
+Here is the strace log of the second container:
+
+The `rootfs` I used for both of the two container are the busybox one:
+
+    docker export $(docker create busybox) | tar -C rootfs -xvf -
+
+I am running Fedora 23 (Workstation Edition), and here is the kernel info:
+
+    [hmeng@localhost c2]$ uname -a
+    Linux localhost.localdomain 4.6.4-201.fc23.x86_64 #1 SMP Tue Jul 12 11:43:59 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+
+
+I am testing runc using the latest master branch:
+
+    commit 7b06cc02c7e777ac2cf2013910fcd487089a7055
+    Merge: bd1d3ac f2c4c4a
+    Author: Mrunal Patel <mrunal@me.com>
+    Date:   Wed Jul 20 08:35:45 2016 -0700
+    
+        Merge pull request #957 from zhaoleidd/fix_exec_test_output
+        
+        integration_testing: Fix a output typo
+

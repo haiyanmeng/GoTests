@@ -1,0 +1,114 @@
+1835:29301 stat("/sys/fs/cgroup/cpuset/integration",  <unfinished ...>
+1841:29301 openat(AT_FDCWD, "/sys/fs/cgroup/cpuset/integration/cpuset.cpus", O_RDONLY|O_CLOEXEC <unfinished ...>
+1862:29301 openat(AT_FDCWD, "/sys/fs/cgroup/cpuset/integration/cpuset.mems", O_RDONLY|O_CLOEXEC <unfinished ...>
+1926:29301 stat("/sys/fs/cgroup/cpuset/integration/test1111",  <unfinished ...>
+1932:29301 stat("/sys/fs/cgroup/cpuset/integration",  <unfinished ...>
+1936:29301 mkdirat(AT_FDCWD, "/sys/fs/cgroup/cpuset/integration/test1111", 0755 <unfinished ...>
+1952:29301 openat(AT_FDCWD, "/sys/fs/cgroup/cpuset/integration/test1111/cpuset.cpus", O_RDONLY|O_CLOEXEC <unfinished ...>
+1973:29301 openat(AT_FDCWD, "/sys/fs/cgroup/cpuset/integration/test1111/cpuset.mems", O_RDONLY|O_CLOEXEC <unfinished ...>
+1997:29301 openat(AT_FDCWD, "/sys/fs/cgroup/cpuset/integration/cpuset.cpus", O_RDONLY|O_CLOEXEC <unfinished ...>
+2017:29301 openat(AT_FDCWD, "/sys/fs/cgroup/cpuset/integration/cpuset.mems", O_RDONLY|O_CLOEXEC <unfinished ...>
+2039:29301 openat(AT_FDCWD, "/sys/fs/cgroup/cpuset/integration/test1111/cpuset.cpus", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700 <unfinished ...>
+2059:29301 openat(AT_FDCWD, "/sys/fs/cgroup/cpuset/integration/test1111/cpuset.mems", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700 <unfinished ...>
+2075:29301 openat(AT_FDCWD, "/sys/fs/cgroup/cpuset/integration/test1111/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700 <unfinished ...>
+2708:29301 stat("/sys/fs/cgroup/devices/user.slice/integration/test1111", 0xc82015cac8) = -1 ENOENT (No such file or directory)
+2710:29301 stat("/sys/fs/cgroup/devices/user.slice/integration",  <unfinished ...>
+2713:29301 mkdirat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/integration/test1111", 0755) = 0
+2714:29301 openat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/integration/test1111/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700 <unfinished ...>
+2763:29301 stat("/sys/fs/cgroup/memory/integration/test1111",  <unfinished ...>
+2767:29301 stat("/sys/fs/cgroup/memory/integration", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+2768:29301 mkdirat(AT_FDCWD, "/sys/fs/cgroup/memory/integration/test1111", 0755 <unfinished ...>
+2792:29301 stat("/sys/fs/cgroup/memory/integration/test1111",  <unfinished ...>
+2796:29301 openat(AT_FDCWD, "/sys/fs/cgroup/memory/integration/test1111/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+2841:29301 stat("/sys/fs/cgroup/cpu,cpuacct/integration/test1111", 0xc82015ced8) = -1 ENOENT (No such file or directory)
+2843:29301 stat("/sys/fs/cgroup/cpu,cpuacct/integration",  <unfinished ...>
+2846:29301 mkdirat(AT_FDCWD, "/sys/fs/cgroup/cpu,cpuacct/integration/test1111", 0755) = 0
+2847:29301 openat(AT_FDCWD, "/sys/fs/cgroup/cpu,cpuacct/integration/test1111/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700 <unfinished ...>
+2895:29301 stat("/sys/fs/cgroup/cpu,cpuacct/integration/test1111", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+2896:29301 openat(AT_FDCWD, "/sys/fs/cgroup/cpu,cpuacct/integration/test1111/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+2941:29301 stat("/sys/fs/cgroup/pids/integration/test1111", 0xc82015d148) = -1 ENOENT (No such file or directory)
+2942:29301 stat("/sys/fs/cgroup/pids/integration",  <unfinished ...>
+2946:29301 mkdirat(AT_FDCWD, "/sys/fs/cgroup/pids/integration/test1111", 0755) = 0
+2947:29301 openat(AT_FDCWD, "/sys/fs/cgroup/pids/integration/test1111/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+2990:29301 stat("/sys/fs/cgroup/blkio/integration/test1111", 0xc82015d2e8) = -1 ENOENT (No such file or directory)
+2991:29301 stat("/sys/fs/cgroup/blkio/integration", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+2992:29301 mkdirat(AT_FDCWD, "/sys/fs/cgroup/blkio/integration/test1111", 0755) = 0
+2993:29301 openat(AT_FDCWD, "/sys/fs/cgroup/blkio/integration/test1111/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+3024:29301 stat("/sys/fs/cgroup/hugetlb/integration/test1111", 0xc82015d488) = -1 ENOENT (No such file or directory)
+3025:29301 stat("/sys/fs/cgroup/hugetlb/integration", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+3026:29301 mkdirat(AT_FDCWD, "/sys/fs/cgroup/hugetlb/integration/test1111", 0755) = 0
+3027:29301 openat(AT_FDCWD, "/sys/fs/cgroup/hugetlb/integration/test1111/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+3055:29301 stat("/sys/fs/cgroup/net_cls,net_prio/integration/test1111", 0xc82015d628) = -1 ENOENT (No such file or directory)
+3056:29301 stat("/sys/fs/cgroup/net_cls,net_prio/integration", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+3057:29301 mkdirat(AT_FDCWD, "/sys/fs/cgroup/net_cls,net_prio/integration/test1111", 0755) = 0
+3058:29301 openat(AT_FDCWD, "/sys/fs/cgroup/net_cls,net_prio/integration/test1111/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+3083:29301 stat("/sys/fs/cgroup/net_cls,net_prio/integration/test1111", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+3084:29301 openat(AT_FDCWD, "/sys/fs/cgroup/net_cls,net_prio/integration/test1111/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+3112:29301 stat("/sys/fs/cgroup/perf_event/integration/test1111", 0xc82015d898) = -1 ENOENT (No such file or directory)
+3113:29301 stat("/sys/fs/cgroup/perf_event/integration", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+3114:29301 mkdirat(AT_FDCWD, "/sys/fs/cgroup/perf_event/integration/test1111", 0755) = 0
+3115:29301 openat(AT_FDCWD, "/sys/fs/cgroup/perf_event/integration/test1111/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+3140:29301 stat("/sys/fs/cgroup/freezer/integration/test1111", 0xc82015da38) = -1 ENOENT (No such file or directory)
+3141:29301 stat("/sys/fs/cgroup/freezer/integration", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+3142:29301 mkdirat(AT_FDCWD, "/sys/fs/cgroup/freezer/integration/test1111", 0755) = 0
+3143:29301 openat(AT_FDCWD, "/sys/fs/cgroup/freezer/integration/test1111/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+3168:29301 stat("/sys/fs/cgroup/systemd/user.slice/user-1000.slice/session-1.scope/integration/test1111", 0xc82015dbd8) = -1 ENOENT (No such file or directory)
+3169:29301 stat("/sys/fs/cgroup/systemd/user.slice/user-1000.slice/session-1.scope/integration", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+3170:29301 mkdirat(AT_FDCWD, "/sys/fs/cgroup/systemd/user.slice/user-1000.slice/session-1.scope/integration/test1111", 0755) = 0
+3171:29301 openat(AT_FDCWD, "/sys/fs/cgroup/systemd/user.slice/user-1000.slice/session-1.scope/integration/test1111/cgroup.procs", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+3556:29301 openat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/integration/test1111/devices.deny", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+3559:29301 openat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/integration/test1111/devices.allow", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+3562:29301 openat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/integration/test1111/devices.allow", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+3565:29301 openat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/integration/test1111/devices.allow", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+3568:29301 openat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/integration/test1111/devices.allow", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+3571:29301 openat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/integration/test1111/devices.allow", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+3574:29301 openat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/integration/test1111/devices.allow", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+3577:29301 openat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/integration/test1111/devices.allow", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+3580:29301 openat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/integration/test1111/devices.allow", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+3583:29301 openat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/integration/test1111/devices.allow", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+3586:29301 openat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/integration/test1111/devices.allow", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+3589:29301 openat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/integration/test1111/devices.allow", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+3592:29301 openat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/integration/test1111/devices.allow", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+3606:29301 openat(AT_FDCWD, "/sys/fs/cgroup/memory/integration/test1111/memory.limit_in_bytes", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+3609:29301 openat(AT_FDCWD, "/sys/fs/cgroup/memory/integration/test1111/memory.soft_limit_in_bytes", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+3623:29301 openat(AT_FDCWD, "/sys/fs/cgroup/cpu,cpuacct/integration/test1111/cpu.cfs_period_us", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+3626:29301 openat(AT_FDCWD, "/sys/fs/cgroup/cpu,cpuacct/integration/test1111/cpu.cfs_quota_us", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0700) = 5
+4484:29305 unlinkat(AT_FDCWD, "/sys/fs/cgroup/blkio/integration/test1111", 0 <unfinished ...>
+4489:29305 unlinkat(AT_FDCWD, "/sys/fs/cgroup/blkio/integration/test1111", AT_REMOVEDIR) = 0
+4490:29305 stat("/sys/fs/cgroup/blkio/integration/test1111", 0xc8201245e8) = -1 ENOENT (No such file or directory)
+4491:29305 unlinkat(AT_FDCWD, "/sys/fs/cgroup/hugetlb/integration/test1111", 0) = -1 EISDIR (Is a directory)
+4492:29305 unlinkat(AT_FDCWD, "/sys/fs/cgroup/hugetlb/integration/test1111", AT_REMOVEDIR) = 0
+4493:29305 stat("/sys/fs/cgroup/hugetlb/integration/test1111", 0xc8201246b8) = -1 ENOENT (No such file or directory)
+4494:29305 unlinkat(AT_FDCWD, "/sys/fs/cgroup/net_cls,net_prio/integration/test1111", 0) = -1 EISDIR (Is a directory)
+4495:29305 unlinkat(AT_FDCWD, "/sys/fs/cgroup/net_cls,net_prio/integration/test1111", AT_REMOVEDIR) = 0
+4496:29305 stat("/sys/fs/cgroup/net_cls,net_prio/integration/test1111", 0xc820124788) = -1 ENOENT (No such file or directory)
+4497:29305 unlinkat(AT_FDCWD, "/sys/fs/cgroup/perf_event/integration/test1111", 0) = -1 EISDIR (Is a directory)
+4498:29305 unlinkat(AT_FDCWD, "/sys/fs/cgroup/perf_event/integration/test1111", AT_REMOVEDIR) = 0
+4499:29305 stat("/sys/fs/cgroup/perf_event/integration/test1111", 0xc820124858) = -1 ENOENT (No such file or directory)
+4500:29305 unlinkat(AT_FDCWD, "/sys/fs/cgroup/cpuset/integration/test1111", 0 <unfinished ...>
+4504:29305 unlinkat(AT_FDCWD, "/sys/fs/cgroup/cpuset/integration/test1111", AT_REMOVEDIR) = 0
+4505:29305 stat("/sys/fs/cgroup/cpuset/integration/test1111", 0xc820124928) = -1 ENOENT (No such file or directory)
+4506:29305 unlinkat(AT_FDCWD, "/sys/fs/cgroup/memory/integration/test1111", 0) = -1 EISDIR (Is a directory)
+4507:29305 unlinkat(AT_FDCWD, "/sys/fs/cgroup/memory/integration/test1111", AT_REMOVEDIR) = 0
+4508:29305 stat("/sys/fs/cgroup/memory/integration/test1111", 0xc8201249f8) = -1 ENOENT (No such file or directory)
+4509:29305 unlinkat(AT_FDCWD, "/sys/fs/cgroup/cpu,cpuacct/integration/test1111", 0) = -1 EISDIR (Is a directory)
+4510:29305 unlinkat(AT_FDCWD, "/sys/fs/cgroup/cpu,cpuacct/integration/test1111", AT_REMOVEDIR) = 0
+4511:29305 stat("/sys/fs/cgroup/cpu,cpuacct/integration/test1111", 0xc820124ac8) = -1 ENOENT (No such file or directory)
+4512:29305 unlinkat(AT_FDCWD, "/sys/fs/cgroup/pids/integration/test1111", 0) = -1 EISDIR (Is a directory)
+4513:29305 unlinkat(AT_FDCWD, "/sys/fs/cgroup/pids/integration/test1111", AT_REMOVEDIR) = 0
+4514:29305 stat("/sys/fs/cgroup/pids/integration/test1111", 0xc820124b98) = -1 ENOENT (No such file or directory)
+4515:29305 unlinkat(AT_FDCWD, "/sys/fs/cgroup/freezer/integration/test1111", 0) = -1 EISDIR (Is a directory)
+4516:29305 unlinkat(AT_FDCWD, "/sys/fs/cgroup/freezer/integration/test1111", AT_REMOVEDIR) = 0
+4517:29305 stat("/sys/fs/cgroup/freezer/integration/test1111", 0xc820124c68) = -1 ENOENT (No such file or directory)
+4518:29305 unlinkat(AT_FDCWD, "/sys/fs/cgroup/systemd/user.slice/user-1000.slice/session-1.scope/integration/test1111", 0) = -1 EISDIR (Is a directory)
+4519:29305 unlinkat(AT_FDCWD, "/sys/fs/cgroup/systemd/user.slice/user-1000.slice/session-1.scope/integration/test1111", AT_REMOVEDIR) = 0
+4520:29305 stat("/sys/fs/cgroup/systemd/user.slice/user-1000.slice/session-1.scope/integration/test1111", 0xc820124d38) = -1 ENOENT (No such file or directory)
+4521:29305 unlinkat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/integration/test1111", 0) = -1 EISDIR (Is a directory)
+4522:29305 unlinkat(AT_FDCWD, "/sys/fs/cgroup/devices/user.slice/integration/test1111", AT_REMOVEDIR) = 0
+4523:29305 stat("/sys/fs/cgroup/devices/user.slice/integration/test1111", 0xc820124e08) = -1 ENOENT (No such file or directory)
+4524:29305 unlinkat(AT_FDCWD, "/sys/fs/cgroup/cpu,cpuacct/integration/test1111", 0) = -1 ENOENT (No such file or directory)
+4525:29305 unlinkat(AT_FDCWD, "/sys/fs/cgroup/cpu,cpuacct/integration/test1111", AT_REMOVEDIR) = -1 ENOENT (No such file or directory)
+4526:29305 stat("/sys/fs/cgroup/cpu,cpuacct/integration/test1111", 0xc820124ed8) = -1 ENOENT (No such file or directory)
+4527:29305 unlinkat(AT_FDCWD, "/sys/fs/cgroup/net_cls,net_prio/integration/test1111", 0) = -1 ENOENT (No such file or directory)
+4528:29305 unlinkat(AT_FDCWD, "/sys/fs/cgroup/net_cls,net_prio/integration/test1111", AT_REMOVEDIR) = -1 ENOENT (No such file or directory)
+4529:29305 stat("/sys/fs/cgroup/net_cls,net_prio/integration/test1111", 0xc820124fa8) = -1 ENOENT (No such file or directory)

@@ -1,0 +1,836 @@
+(*configs.Config)(0xc820262800)({
+ NoPivotRoot: (bool) false,
+ ParentDeathSignal: (int) 0,
+ PivotDir: (string) "",
+ Rootfs: (string) (len=14) "/tmp/741425609",
+ Readonlyfs: (bool) false,
+ RootPropagation: (int) 0,
+ Mounts: ([]*configs.Mount) (len=5 cap=5) {
+  (*configs.Mount)(0xc82007f040)({
+   Source: (string) (len=4) "proc",
+   Destination: (string) (len=5) "/proc",
+   Device: (string) (len=4) "proc",
+   Flags: (int) 14,
+   PropagationFlags: ([]int) <nil>,
+   Data: (string) "",
+   Relabel: (string) "",
+   PremountCmds: ([]configs.Command) <nil>,
+   PostmountCmds: ([]configs.Command) <nil>
+  }),
+  (*configs.Mount)(0xc82007f0e0)({
+   Source: (string) (len=5) "tmpfs",
+   Destination: (string) (len=4) "/dev",
+   Device: (string) (len=5) "tmpfs",
+   Flags: (int) 16777218,
+   PropagationFlags: ([]int) <nil>,
+   Data: (string) (len=8) "mode=755",
+   Relabel: (string) "",
+   PremountCmds: ([]configs.Command) <nil>,
+   PostmountCmds: ([]configs.Command) <nil>
+  }),
+  (*configs.Mount)(0xc82007f180)({
+   Source: (string) (len=6) "devpts",
+   Destination: (string) (len=8) "/dev/pts",
+   Device: (string) (len=6) "devpts",
+   Flags: (int) 10,
+   PropagationFlags: ([]int) <nil>,
+   Data: (string) (len=41) "newinstance,ptmxmode=0666,mode=0620,gid=5",
+   Relabel: (string) "",
+   PremountCmds: ([]configs.Command) <nil>,
+   PostmountCmds: ([]configs.Command) <nil>
+  }),
+  (*configs.Mount)(0xc82007f220)({
+   Source: (string) (len=3) "shm",
+   Destination: (string) (len=8) "/dev/shm",
+   Device: (string) (len=5) "tmpfs",
+   Flags: (int) 14,
+   PropagationFlags: ([]int) <nil>,
+   Data: (string) (len=21) "mode=1777,size=65536k",
+   Relabel: (string) "",
+   PremountCmds: ([]configs.Command) <nil>,
+   PostmountCmds: ([]configs.Command) <nil>
+  }),
+  (*configs.Mount)(0xc82007f2c0)({
+   Source: (string) (len=5) "sysfs",
+   Destination: (string) (len=4) "/sys",
+   Device: (string) (len=5) "sysfs",
+   Flags: (int) 15,
+   PropagationFlags: ([]int) <nil>,
+   Data: (string) "",
+   Relabel: (string) "",
+   PremountCmds: ([]configs.Command) <nil>,
+   PostmountCmds: ([]configs.Command) <nil>
+  })
+ },
+ Devices: ([]*configs.Device) (len=7 cap=8) {
+  (*configs.Device)(0xc8200163c0)({
+   Type: (int32) 99,
+   Path: (string) (len=9) "/dev/fuse",
+   Major: (int64) 10,
+   Minor: (int64) 229,
+   Permissions: (string) (len=3) "rwm",
+   FileMode: (os.FileMode) ----------,
+   Uid: (uint32) 0,
+   Gid: (uint32) 0,
+   Allow: (bool) false
+  }),
+  (*configs.Device)(0xc28980)({
+   Type: (int32) 99,
+   Path: (string) (len=9) "/dev/null",
+   Major: (int64) 1,
+   Minor: (int64) 3,
+   Permissions: (string) (len=3) "rwm",
+   FileMode: (os.FileMode) -rw-rw-rw-,
+   Uid: (uint32) 0,
+   Gid: (uint32) 0,
+   Allow: (bool) false
+  }),
+  (*configs.Device)(0xc289e0)({
+   Type: (int32) 99,
+   Path: (string) (len=9) "/dev/zero",
+   Major: (int64) 1,
+   Minor: (int64) 5,
+   Permissions: (string) (len=3) "rwm",
+   FileMode: (os.FileMode) -rw-rw-rw-,
+   Uid: (uint32) 0,
+   Gid: (uint32) 0,
+   Allow: (bool) false
+  }),
+  (*configs.Device)(0xc28a40)({
+   Type: (int32) 99,
+   Path: (string) (len=9) "/dev/full",
+   Major: (int64) 1,
+   Minor: (int64) 7,
+   Permissions: (string) (len=3) "rwm",
+   FileMode: (os.FileMode) -rw-rw-rw-,
+   Uid: (uint32) 0,
+   Gid: (uint32) 0,
+   Allow: (bool) false
+  }),
+  (*configs.Device)(0xc28aa0)({
+   Type: (int32) 99,
+   Path: (string) (len=8) "/dev/tty",
+   Major: (int64) 5,
+   Minor: (int64) 0,
+   Permissions: (string) (len=3) "rwm",
+   FileMode: (os.FileMode) -rw-rw-rw-,
+   Uid: (uint32) 0,
+   Gid: (uint32) 0,
+   Allow: (bool) false
+  }),
+  (*configs.Device)(0xc28b00)({
+   Type: (int32) 99,
+   Path: (string) (len=12) "/dev/urandom",
+   Major: (int64) 1,
+   Minor: (int64) 9,
+   Permissions: (string) (len=3) "rwm",
+   FileMode: (os.FileMode) -rw-rw-rw-,
+   Uid: (uint32) 0,
+   Gid: (uint32) 0,
+   Allow: (bool) false
+  }),
+  (*configs.Device)(0xc28b60)({
+   Type: (int32) 99,
+   Path: (string) (len=11) "/dev/random",
+   Major: (int64) 1,
+   Minor: (int64) 8,
+   Permissions: (string) (len=3) "rwm",
+   FileMode: (os.FileMode) -rw-rw-rw-,
+   Uid: (uint32) 0,
+   Gid: (uint32) 0,
+   Allow: (bool) false
+  })
+ },
+ MountLabel: (string) "",
+ Hostname: (string) (len=11) "integration",
+ Namespaces: (configs.Namespaces) (len=6 cap=10) {
+  (configs.Namespace) {
+   Type: (configs.NamespaceType) (len=5) "NEWNS",
+   Path: (string) ""
+  },
+  (configs.Namespace) {
+   Type: (configs.NamespaceType) (len=6) "NEWUTS",
+   Path: (string) ""
+  },
+  (configs.Namespace) {
+   Type: (configs.NamespaceType) (len=6) "NEWIPC",
+   Path: (string) ""
+  },
+  (configs.Namespace) {
+   Type: (configs.NamespaceType) (len=6) "NEWPID",
+   Path: (string) ""
+  },
+  (configs.Namespace) {
+   Type: (configs.NamespaceType) (len=6) "NEWNET",
+   Path: (string) ""
+  },
+  (configs.Namespace) {
+   Type: (configs.NamespaceType) (len=7) "NEWUSER",
+   Path: (string) ""
+  }
+ },
+ Capabilities: ([]string) (len=14 cap=14) {
+  (string) (len=9) "CAP_CHOWN",
+  (string) (len=16) "CAP_DAC_OVERRIDE",
+  (string) (len=10) "CAP_FSETID",
+  (string) (len=10) "CAP_FOWNER",
+  (string) (len=9) "CAP_MKNOD",
+  (string) (len=11) "CAP_NET_RAW",
+  (string) (len=10) "CAP_SETGID",
+  (string) (len=10) "CAP_SETUID",
+  (string) (len=11) "CAP_SETFCAP",
+  (string) (len=11) "CAP_SETPCAP",
+  (string) (len=20) "CAP_NET_BIND_SERVICE",
+  (string) (len=14) "CAP_SYS_CHROOT",
+  (string) (len=8) "CAP_KILL",
+  (string) (len=15) "CAP_AUDIT_WRITE"
+ },
+ Networks: ([]*configs.Network) (len=1 cap=1) {
+  (*configs.Network)(0xc82008a790)({
+   Type: (string) (len=8) "loopback",
+   Name: (string) "",
+   Bridge: (string) "",
+   MacAddress: (string) "",
+   Address: (string) (len=11) "127.0.0.1/0",
+   Gateway: (string) (len=9) "localhost",
+   IPv6Address: (string) "",
+   IPv6Gateway: (string) "",
+   Mtu: (int) 0,
+   TxQueueLen: (int) 0,
+   HostInterfaceName: (string) "",
+   HairpinMode: (bool) false
+  })
+ },
+ Routes: ([]*configs.Route) <nil>,
+ Cgroups: (*configs.Cgroup)(0xc820016af0)({
+  Name: (string) "",
+  Parent: (string) "",
+  Path: (string) (len=16) "integration/test",
+  ScopePrefix: (string) "",
+  Paths: (map[string]string) <nil>,
+  Resources: (*configs.Resources)(0xc8203a0000)({
+   AllowAllDevices: (bool) false,
+   AllowedDevices: ([]*configs.Device) (len=12 cap=12) {
+    (*configs.Device)(0xc8200161e0)({
+     Type: (int32) 99,
+     Path: (string) "",
+     Major: (int64) -1,
+     Minor: (int64) -1,
+     Permissions: (string) (len=1) "m",
+     FileMode: (os.FileMode) ----------,
+     Uid: (uint32) 0,
+     Gid: (uint32) 0,
+     Allow: (bool) false
+    }),
+    (*configs.Device)(0xc820016230)({
+     Type: (int32) 98,
+     Path: (string) "",
+     Major: (int64) -1,
+     Minor: (int64) -1,
+     Permissions: (string) (len=1) "m",
+     FileMode: (os.FileMode) ----------,
+     Uid: (uint32) 0,
+     Gid: (uint32) 0,
+     Allow: (bool) false
+    }),
+    (*configs.Device)(0xc820016280)({
+     Type: (int32) 99,
+     Path: (string) (len=12) "/dev/console",
+     Major: (int64) 5,
+     Minor: (int64) 1,
+     Permissions: (string) (len=3) "rwm",
+     FileMode: (os.FileMode) ----------,
+     Uid: (uint32) 0,
+     Gid: (uint32) 0,
+     Allow: (bool) false
+    }),
+    (*configs.Device)(0xc8200162d0)({
+     Type: (int32) 99,
+     Path: (string) "",
+     Major: (int64) 136,
+     Minor: (int64) -1,
+     Permissions: (string) (len=3) "rwm",
+     FileMode: (os.FileMode) ----------,
+     Uid: (uint32) 0,
+     Gid: (uint32) 0,
+     Allow: (bool) false
+    }),
+    (*configs.Device)(0xc820016320)({
+     Type: (int32) 99,
+     Path: (string) "",
+     Major: (int64) 5,
+     Minor: (int64) 2,
+     Permissions: (string) (len=3) "rwm",
+     FileMode: (os.FileMode) ----------,
+     Uid: (uint32) 0,
+     Gid: (uint32) 0,
+     Allow: (bool) false
+    }),
+    (*configs.Device)(0xc820016370)({
+     Type: (int32) 99,
+     Path: (string) "",
+     Major: (int64) 10,
+     Minor: (int64) 200,
+     Permissions: (string) (len=3) "rwm",
+     FileMode: (os.FileMode) ----------,
+     Uid: (uint32) 0,
+     Gid: (uint32) 0,
+     Allow: (bool) false
+    }),
+    (*configs.Device)(0xc28980)({
+     Type: (int32) 99,
+     Path: (string) (len=9) "/dev/null",
+     Major: (int64) 1,
+     Minor: (int64) 3,
+     Permissions: (string) (len=3) "rwm",
+     FileMode: (os.FileMode) -rw-rw-rw-,
+     Uid: (uint32) 0,
+     Gid: (uint32) 0,
+     Allow: (bool) false
+    }),
+    (*configs.Device)(0xc289e0)({
+     Type: (int32) 99,
+     Path: (string) (len=9) "/dev/zero",
+     Major: (int64) 1,
+     Minor: (int64) 5,
+     Permissions: (string) (len=3) "rwm",
+     FileMode: (os.FileMode) -rw-rw-rw-,
+     Uid: (uint32) 0,
+     Gid: (uint32) 0,
+     Allow: (bool) false
+    }),
+    (*configs.Device)(0xc28a40)({
+     Type: (int32) 99,
+     Path: (string) (len=9) "/dev/full",
+     Major: (int64) 1,
+     Minor: (int64) 7,
+     Permissions: (string) (len=3) "rwm",
+     FileMode: (os.FileMode) -rw-rw-rw-,
+     Uid: (uint32) 0,
+     Gid: (uint32) 0,
+     Allow: (bool) false
+    }),
+    (*configs.Device)(0xc28aa0)({
+     Type: (int32) 99,
+     Path: (string) (len=8) "/dev/tty",
+     Major: (int64) 5,
+     Minor: (int64) 0,
+     Permissions: (string) (len=3) "rwm",
+     FileMode: (os.FileMode) -rw-rw-rw-,
+     Uid: (uint32) 0,
+     Gid: (uint32) 0,
+     Allow: (bool) false
+    }),
+    (*configs.Device)(0xc28b00)({
+     Type: (int32) 99,
+     Path: (string) (len=12) "/dev/urandom",
+     Major: (int64) 1,
+     Minor: (int64) 9,
+     Permissions: (string) (len=3) "rwm",
+     FileMode: (os.FileMode) -rw-rw-rw-,
+     Uid: (uint32) 0,
+     Gid: (uint32) 0,
+     Allow: (bool) false
+    }),
+    (*configs.Device)(0xc28b60)({
+     Type: (int32) 99,
+     Path: (string) (len=11) "/dev/random",
+     Major: (int64) 1,
+     Minor: (int64) 8,
+     Permissions: (string) (len=3) "rwm",
+     FileMode: (os.FileMode) -rw-rw-rw-,
+     Uid: (uint32) 0,
+     Gid: (uint32) 0,
+     Allow: (bool) false
+    })
+   },
+   DeniedDevices: ([]*configs.Device) <nil>,
+   Devices: ([]*configs.Device) <nil>,
+   Memory: (int64) 0,
+   MemoryReservation: (int64) 0,
+   MemorySwap: (int64) 0,
+   KernelMemory: (int64) 0,
+   KernelMemoryTCP: (int64) 0,
+   CpuShares: (int64) 0,
+   CpuQuota: (int64) 0,
+   CpuPeriod: (int64) 0,
+   CpuRtRuntime: (int64) 0,
+   CpuRtPeriod: (int64) 0,
+   CpusetCpus: (string) "",
+   CpusetMems: (string) "",
+   PidsLimit: (int64) 0,
+   BlkioWeight: (uint16) 0,
+   BlkioLeafWeight: (uint16) 0,
+   BlkioWeightDevice: ([]*configs.WeightDevice) <nil>,
+   BlkioThrottleReadBpsDevice: ([]*configs.ThrottleDevice) <nil>,
+   BlkioThrottleWriteBpsDevice: ([]*configs.ThrottleDevice) <nil>,
+   BlkioThrottleReadIOPSDevice: ([]*configs.ThrottleDevice) <nil>,
+   BlkioThrottleWriteIOPSDevice: ([]*configs.ThrottleDevice) <nil>,
+   Freezer: (configs.FreezerState) "",
+   HugetlbLimit: ([]*configs.HugepageLimit) <nil>,
+   OomKillDisable: (bool) false,
+   MemorySwappiness: (*int64)(<nil>),
+   NetPrioIfpriomap: ([]*configs.IfPrioMap) <nil>,
+   NetClsClassid: (string) ""
+  })
+ }),
+ AppArmorProfile: (string) "",
+ ProcessLabel: (string) "",
+ Rlimits: ([]configs.Rlimit) (len=1 cap=1) {
+  (configs.Rlimit) {
+   Type: (int) 7,
+   Hard: (uint64) 1025,
+   Soft: (uint64) 1025
+  }
+ },
+ OomScoreAdj: (int) 0,
+ AdditionalGroups: ([]string) <nil>,
+ UidMappings: ([]configs.IDMap) (len=1 cap=1) {
+  (configs.IDMap) {
+   ContainerID: (int) 0,
+   HostID: (int) 0,
+   Size: (int) 1000
+  }
+ },
+ GidMappings: ([]configs.IDMap) (len=1 cap=1) {
+  (configs.IDMap) {
+   ContainerID: (int) 0,
+   HostID: (int) 0,
+   Size: (int) 1000
+  }
+ },
+ MaskPaths: ([]string) (len=1 cap=1) {
+  (string) (len=11) "/proc/kcore"
+ },
+ ReadonlyPaths: ([]string) (len=4 cap=4) {
+  (string) (len=9) "/proc/sys",
+  (string) (len=19) "/proc/sysrq-trigger",
+  (string) (len=9) "/proc/irq",
+  (string) (len=9) "/proc/bus"
+ },
+ Sysctl: (map[string]string) <nil>,
+ Seccomp: (*configs.Seccomp)(<nil>),
+ NoNewPrivileges: (bool) false,
+ Hooks: (*configs.Hooks)(<nil>),
+ Version: (string) "",
+ Labels: ([]string) <nil>,
+ NoNewKeyring: (bool) false
+})
+(*configs.Config)(0xc8203f0200)({
+ NoPivotRoot: (bool) false,
+ ParentDeathSignal: (int) 0,
+ PivotDir: (string) "",
+ Rootfs: (string) (len=14) "/tmp/277925012",
+ Readonlyfs: (bool) false,
+ RootPropagation: (int) 0,
+ Mounts: ([]*configs.Mount) (len=5 cap=5) {
+  (*configs.Mount)(0xc8204820a0)({
+   Source: (string) (len=4) "proc",
+   Destination: (string) (len=5) "/proc",
+   Device: (string) (len=4) "proc",
+   Flags: (int) 14,
+   PropagationFlags: ([]int) <nil>,
+   Data: (string) "",
+   Relabel: (string) "",
+   PremountCmds: ([]configs.Command) <nil>,
+   PostmountCmds: ([]configs.Command) <nil>
+  }),
+  (*configs.Mount)(0xc820482140)({
+   Source: (string) (len=5) "tmpfs",
+   Destination: (string) (len=4) "/dev",
+   Device: (string) (len=5) "tmpfs",
+   Flags: (int) 16777218,
+   PropagationFlags: ([]int) <nil>,
+   Data: (string) (len=8) "mode=755",
+   Relabel: (string) "",
+   PremountCmds: ([]configs.Command) <nil>,
+   PostmountCmds: ([]configs.Command) <nil>
+  }),
+  (*configs.Mount)(0xc8204821e0)({
+   Source: (string) (len=6) "devpts",
+   Destination: (string) (len=8) "/dev/pts",
+   Device: (string) (len=6) "devpts",
+   Flags: (int) 10,
+   PropagationFlags: ([]int) <nil>,
+   Data: (string) (len=41) "newinstance,ptmxmode=0666,mode=0620,gid=5",
+   Relabel: (string) "",
+   PremountCmds: ([]configs.Command) <nil>,
+   PostmountCmds: ([]configs.Command) <nil>
+  }),
+  (*configs.Mount)(0xc820482280)({
+   Source: (string) (len=3) "shm",
+   Destination: (string) (len=8) "/dev/shm",
+   Device: (string) (len=5) "tmpfs",
+   Flags: (int) 14,
+   PropagationFlags: ([]int) <nil>,
+   Data: (string) (len=21) "mode=1777,size=65536k",
+   Relabel: (string) "",
+   PremountCmds: ([]configs.Command) <nil>,
+   PostmountCmds: ([]configs.Command) <nil>
+  }),
+  (*configs.Mount)(0xc820482320)({
+   Source: (string) (len=5) "sysfs",
+   Destination: (string) (len=4) "/sys",
+   Device: (string) (len=5) "sysfs",
+   Flags: (int) 15,
+   PropagationFlags: ([]int) <nil>,
+   Data: (string) "",
+   Relabel: (string) "",
+   PremountCmds: ([]configs.Command) <nil>,
+   PostmountCmds: ([]configs.Command) <nil>
+  })
+ },
+ Devices: ([]*configs.Device) (len=7 cap=8) {
+  (*configs.Device)(0xc8200163c0)({
+   Type: (int32) 99,
+   Path: (string) (len=9) "/dev/fuse",
+   Major: (int64) 10,
+   Minor: (int64) 229,
+   Permissions: (string) (len=3) "rwm",
+   FileMode: (os.FileMode) ----------,
+   Uid: (uint32) 0,
+   Gid: (uint32) 0,
+   Allow: (bool) false
+  }),
+  (*configs.Device)(0xc28980)({
+   Type: (int32) 99,
+   Path: (string) (len=9) "/dev/null",
+   Major: (int64) 1,
+   Minor: (int64) 3,
+   Permissions: (string) (len=3) "rwm",
+   FileMode: (os.FileMode) -rw-rw-rw-,
+   Uid: (uint32) 0,
+   Gid: (uint32) 0,
+   Allow: (bool) false
+  }),
+  (*configs.Device)(0xc289e0)({
+   Type: (int32) 99,
+   Path: (string) (len=9) "/dev/zero",
+   Major: (int64) 1,
+   Minor: (int64) 5,
+   Permissions: (string) (len=3) "rwm",
+   FileMode: (os.FileMode) -rw-rw-rw-,
+   Uid: (uint32) 0,
+   Gid: (uint32) 0,
+   Allow: (bool) false
+  }),
+  (*configs.Device)(0xc28a40)({
+   Type: (int32) 99,
+   Path: (string) (len=9) "/dev/full",
+   Major: (int64) 1,
+   Minor: (int64) 7,
+   Permissions: (string) (len=3) "rwm",
+   FileMode: (os.FileMode) -rw-rw-rw-,
+   Uid: (uint32) 0,
+   Gid: (uint32) 0,
+   Allow: (bool) false
+  }),
+  (*configs.Device)(0xc28aa0)({
+   Type: (int32) 99,
+   Path: (string) (len=8) "/dev/tty",
+   Major: (int64) 5,
+   Minor: (int64) 0,
+   Permissions: (string) (len=3) "rwm",
+   FileMode: (os.FileMode) -rw-rw-rw-,
+   Uid: (uint32) 0,
+   Gid: (uint32) 0,
+   Allow: (bool) false
+  }),
+  (*configs.Device)(0xc28b00)({
+   Type: (int32) 99,
+   Path: (string) (len=12) "/dev/urandom",
+   Major: (int64) 1,
+   Minor: (int64) 9,
+   Permissions: (string) (len=3) "rwm",
+   FileMode: (os.FileMode) -rw-rw-rw-,
+   Uid: (uint32) 0,
+   Gid: (uint32) 0,
+   Allow: (bool) false
+  }),
+  (*configs.Device)(0xc28b60)({
+   Type: (int32) 99,
+   Path: (string) (len=11) "/dev/random",
+   Major: (int64) 1,
+   Minor: (int64) 8,
+   Permissions: (string) (len=3) "rwm",
+   FileMode: (os.FileMode) -rw-rw-rw-,
+   Uid: (uint32) 0,
+   Gid: (uint32) 0,
+   Allow: (bool) false
+  })
+ },
+ MountLabel: (string) "",
+ Hostname: (string) (len=11) "integration",
+ Namespaces: (configs.Namespaces) (len=6 cap=10) {
+  (configs.Namespace) {
+   Type: (configs.NamespaceType) (len=5) "NEWNS",
+   Path: (string) ""
+  },
+  (configs.Namespace) {
+   Type: (configs.NamespaceType) (len=6) "NEWUTS",
+   Path: (string) ""
+  },
+  (configs.Namespace) {
+   Type: (configs.NamespaceType) (len=6) "NEWIPC",
+   Path: (string) ""
+  },
+  (configs.Namespace) {
+   Type: (configs.NamespaceType) (len=6) "NEWPID",
+   Path: (string) ""
+  },
+  (configs.Namespace) {
+   Type: (configs.NamespaceType) (len=6) "NEWNET",
+   Path: (string) (len=16) "/proc/985/ns/net"
+  },
+  (configs.Namespace) {
+   Type: (configs.NamespaceType) (len=7) "NEWUSER",
+   Path: (string) (len=17) "/proc/985/ns/user"
+  }
+ },
+ Capabilities: ([]string) (len=14 cap=14) {
+  (string) (len=9) "CAP_CHOWN",
+  (string) (len=16) "CAP_DAC_OVERRIDE",
+  (string) (len=10) "CAP_FSETID",
+  (string) (len=10) "CAP_FOWNER",
+  (string) (len=9) "CAP_MKNOD",
+  (string) (len=11) "CAP_NET_RAW",
+  (string) (len=10) "CAP_SETGID",
+  (string) (len=10) "CAP_SETUID",
+  (string) (len=11) "CAP_SETFCAP",
+  (string) (len=11) "CAP_SETPCAP",
+  (string) (len=20) "CAP_NET_BIND_SERVICE",
+  (string) (len=14) "CAP_SYS_CHROOT",
+  (string) (len=8) "CAP_KILL",
+  (string) (len=15) "CAP_AUDIT_WRITE"
+ },
+ Networks: ([]*configs.Network) (len=1 cap=1) {
+  (*configs.Network)(0xc820486000)({
+   Type: (string) (len=8) "loopback",
+   Name: (string) "",
+   Bridge: (string) "",
+   MacAddress: (string) "",
+   Address: (string) (len=11) "127.0.0.1/0",
+   Gateway: (string) (len=9) "localhost",
+   IPv6Address: (string) "",
+   IPv6Gateway: (string) "",
+   Mtu: (int) 0,
+   TxQueueLen: (int) 0,
+   HostInterfaceName: (string) "",
+   HairpinMode: (bool) false
+  })
+ },
+ Routes: ([]*configs.Route) <nil>,
+ Cgroups: (*configs.Cgroup)(0xc8201c42d0)({
+  Name: (string) "",
+  Parent: (string) "",
+  Path: (string) (len=17) "integration/test2",
+  ScopePrefix: (string) "",
+  Paths: (map[string]string) <nil>,
+  Resources: (*configs.Resources)(0xc820484000)({
+   AllowAllDevices: (bool) false,
+   AllowedDevices: ([]*configs.Device) (len=12 cap=12) {
+    (*configs.Device)(0xc8200161e0)({
+     Type: (int32) 99,
+     Path: (string) "",
+     Major: (int64) -1,
+     Minor: (int64) -1,
+     Permissions: (string) (len=1) "m",
+     FileMode: (os.FileMode) ----------,
+     Uid: (uint32) 0,
+     Gid: (uint32) 0,
+     Allow: (bool) false
+    }),
+    (*configs.Device)(0xc820016230)({
+     Type: (int32) 98,
+     Path: (string) "",
+     Major: (int64) -1,
+     Minor: (int64) -1,
+     Permissions: (string) (len=1) "m",
+     FileMode: (os.FileMode) ----------,
+     Uid: (uint32) 0,
+     Gid: (uint32) 0,
+     Allow: (bool) false
+    }),
+    (*configs.Device)(0xc820016280)({
+     Type: (int32) 99,
+     Path: (string) (len=12) "/dev/console",
+     Major: (int64) 5,
+     Minor: (int64) 1,
+     Permissions: (string) (len=3) "rwm",
+     FileMode: (os.FileMode) ----------,
+     Uid: (uint32) 0,
+     Gid: (uint32) 0,
+     Allow: (bool) false
+    }),
+    (*configs.Device)(0xc8200162d0)({
+     Type: (int32) 99,
+     Path: (string) "",
+     Major: (int64) 136,
+     Minor: (int64) -1,
+     Permissions: (string) (len=3) "rwm",
+     FileMode: (os.FileMode) ----------,
+     Uid: (uint32) 0,
+     Gid: (uint32) 0,
+     Allow: (bool) false
+    }),
+    (*configs.Device)(0xc820016320)({
+     Type: (int32) 99,
+     Path: (string) "",
+     Major: (int64) 5,
+     Minor: (int64) 2,
+     Permissions: (string) (len=3) "rwm",
+     FileMode: (os.FileMode) ----------,
+     Uid: (uint32) 0,
+     Gid: (uint32) 0,
+     Allow: (bool) false
+    }),
+    (*configs.Device)(0xc820016370)({
+     Type: (int32) 99,
+     Path: (string) "",
+     Major: (int64) 10,
+     Minor: (int64) 200,
+     Permissions: (string) (len=3) "rwm",
+     FileMode: (os.FileMode) ----------,
+     Uid: (uint32) 0,
+     Gid: (uint32) 0,
+     Allow: (bool) false
+    }),
+    (*configs.Device)(0xc28980)({
+     Type: (int32) 99,
+     Path: (string) (len=9) "/dev/null",
+     Major: (int64) 1,
+     Minor: (int64) 3,
+     Permissions: (string) (len=3) "rwm",
+     FileMode: (os.FileMode) -rw-rw-rw-,
+     Uid: (uint32) 0,
+     Gid: (uint32) 0,
+     Allow: (bool) false
+    }),
+    (*configs.Device)(0xc289e0)({
+     Type: (int32) 99,
+     Path: (string) (len=9) "/dev/zero",
+     Major: (int64) 1,
+     Minor: (int64) 5,
+     Permissions: (string) (len=3) "rwm",
+     FileMode: (os.FileMode) -rw-rw-rw-,
+     Uid: (uint32) 0,
+     Gid: (uint32) 0,
+     Allow: (bool) false
+    }),
+    (*configs.Device)(0xc28a40)({
+     Type: (int32) 99,
+     Path: (string) (len=9) "/dev/full",
+     Major: (int64) 1,
+     Minor: (int64) 7,
+     Permissions: (string) (len=3) "rwm",
+     FileMode: (os.FileMode) -rw-rw-rw-,
+     Uid: (uint32) 0,
+     Gid: (uint32) 0,
+     Allow: (bool) false
+    }),
+    (*configs.Device)(0xc28aa0)({
+     Type: (int32) 99,
+     Path: (string) (len=8) "/dev/tty",
+     Major: (int64) 5,
+     Minor: (int64) 0,
+     Permissions: (string) (len=3) "rwm",
+     FileMode: (os.FileMode) -rw-rw-rw-,
+     Uid: (uint32) 0,
+     Gid: (uint32) 0,
+     Allow: (bool) false
+    }),
+    (*configs.Device)(0xc28b00)({
+     Type: (int32) 99,
+     Path: (string) (len=12) "/dev/urandom",
+     Major: (int64) 1,
+     Minor: (int64) 9,
+     Permissions: (string) (len=3) "rwm",
+     FileMode: (os.FileMode) -rw-rw-rw-,
+     Uid: (uint32) 0,
+     Gid: (uint32) 0,
+     Allow: (bool) false
+    }),
+    (*configs.Device)(0xc28b60)({
+     Type: (int32) 99,
+     Path: (string) (len=11) "/dev/random",
+     Major: (int64) 1,
+     Minor: (int64) 8,
+     Permissions: (string) (len=3) "rwm",
+     FileMode: (os.FileMode) -rw-rw-rw-,
+     Uid: (uint32) 0,
+     Gid: (uint32) 0,
+     Allow: (bool) false
+    })
+   },
+   DeniedDevices: ([]*configs.Device) <nil>,
+   Devices: ([]*configs.Device) <nil>,
+   Memory: (int64) 0,
+   MemoryReservation: (int64) 0,
+   MemorySwap: (int64) 0,
+   KernelMemory: (int64) 0,
+   KernelMemoryTCP: (int64) 0,
+   CpuShares: (int64) 0,
+   CpuQuota: (int64) 0,
+   CpuPeriod: (int64) 0,
+   CpuRtRuntime: (int64) 0,
+   CpuRtPeriod: (int64) 0,
+   CpusetCpus: (string) "",
+   CpusetMems: (string) "",
+   PidsLimit: (int64) 0,
+   BlkioWeight: (uint16) 0,
+   BlkioLeafWeight: (uint16) 0,
+   BlkioWeightDevice: ([]*configs.WeightDevice) <nil>,
+   BlkioThrottleReadBpsDevice: ([]*configs.ThrottleDevice) <nil>,
+   BlkioThrottleWriteBpsDevice: ([]*configs.ThrottleDevice) <nil>,
+   BlkioThrottleReadIOPSDevice: ([]*configs.ThrottleDevice) <nil>,
+   BlkioThrottleWriteIOPSDevice: ([]*configs.ThrottleDevice) <nil>,
+   Freezer: (configs.FreezerState) "",
+   HugetlbLimit: ([]*configs.HugepageLimit) <nil>,
+   OomKillDisable: (bool) false,
+   MemorySwappiness: (*int64)(<nil>),
+   NetPrioIfpriomap: ([]*configs.IfPrioMap) <nil>,
+   NetClsClassid: (string) ""
+  })
+ }),
+ AppArmorProfile: (string) "",
+ ProcessLabel: (string) "",
+ Rlimits: ([]configs.Rlimit) (len=1 cap=1) {
+  (configs.Rlimit) {
+   Type: (int) 7,
+   Hard: (uint64) 1025,
+   Soft: (uint64) 1025
+  }
+ },
+ OomScoreAdj: (int) 0,
+ AdditionalGroups: ([]string) <nil>,
+ UidMappings: ([]configs.IDMap) (len=1 cap=1) {
+  (configs.IDMap) {
+   ContainerID: (int) 0,
+   HostID: (int) 0,
+   Size: (int) 1000
+  }
+ },
+ GidMappings: ([]configs.IDMap) (len=1 cap=1) {
+  (configs.IDMap) {
+   ContainerID: (int) 0,
+   HostID: (int) 0,
+   Size: (int) 1000
+  }
+ },
+ MaskPaths: ([]string) (len=1 cap=1) {
+  (string) (len=11) "/proc/kcore"
+ },
+ ReadonlyPaths: ([]string) (len=4 cap=4) {
+  (string) (len=9) "/proc/sys",
+  (string) (len=19) "/proc/sysrq-trigger",
+  (string) (len=9) "/proc/irq",
+  (string) (len=9) "/proc/bus"
+ },
+ Sysctl: (map[string]string) <nil>,
+ Seccomp: (*configs.Seccomp)(<nil>),
+ NoNewPrivileges: (bool) false,
+ Hooks: (*configs.Hooks)(<nil>),
+ Version: (string) "",
+ Labels: ([]string) <nil>,
+ NoNewKeyring: (bool) false
+})

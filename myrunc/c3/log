@@ -1,0 +1,731 @@
+19275 execve("/usr/local/sbin/runc", ["/usr/local/sbin/runc", "create", "1"], [/* 19 vars */]) = 0
+19275 brk(NULL)                         = 0x1280000
+19275 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7efca2009000
+19275 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+19275 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+19275 fstat(3, {st_mode=S_IFREG|0644, st_size=89834, ...}) = 0
+19275 mmap(NULL, 89834, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7efca1ff3000
+19275 close(3)                          = 0
+19275 open("/lib64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+19275 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300`\0\0\0\0\0\0"..., 832) = 832
+19275 fstat(3, {st_mode=S_IFREG|0755, st_size=153592, ...}) = 0
+19275 mmap(NULL, 2217136, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7efca1bcc000
+19275 mprotect(0x7efca1be4000, 2093056, PROT_NONE) = 0
+19275 mmap(0x7efca1de3000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7efca1de3000
+19275 mmap(0x7efca1de6000, 13488, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7efca1de6000
+19275 close(3)                          = 0
+19275 open("/lib64/libseccomp.so.2", O_RDONLY|O_CLOEXEC) = 3
+19275 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\361\1\0\0\0\0\0"..., 832) = 832
+19275 fstat(3, {st_mode=S_IFREG|0755, st_size=266232, ...}) = 0
+19275 mmap(NULL, 2359320, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7efca198b000
+19275 mprotect(0x7efca19b7000, 2093056, PROT_NONE) = 0
+19275 mmap(0x7efca1bb6000, 90112, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2b000) = 0x7efca1bb6000
+19275 close(3)                          = 0
+19275 open("/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+19275 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\6\2\0\0\0\0\0"..., 832) = 832
+19275 fstat(3, {st_mode=S_IFREG|0755, st_size=2104216, ...}) = 0
+19275 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7efca1ff2000
+19275 mmap(NULL, 3934688, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7efca15ca000
+19275 mprotect(0x7efca1781000, 2097152, PROT_NONE) = 0
+19275 mmap(0x7efca1981000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b7000) = 0x7efca1981000
+19275 mmap(0x7efca1987000, 14816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7efca1987000
+19275 close(3)                          = 0
+19275 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7efca1ff1000
+19275 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7efca1ff0000
+19275 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7efca1fef000
+19275 arch_prctl(ARCH_SET_FS, 0x7efca1ff0700) = 0
+19275 mprotect(0x7efca1981000, 16384, PROT_READ) = 0
+19275 mprotect(0x7efca1bb6000, 86016, PROT_READ) = 0
+19275 mprotect(0x7efca1de3000, 8192, PROT_READ) = 0
+19275 mprotect(0xc32000, 4096, PROT_READ) = 0
+19275 mprotect(0x7efca200a000, 4096, PROT_READ) = 0
+19275 munmap(0x7efca1ff3000, 89834)     = 0
+19275 set_tid_address(0x7efca1ff09d0)   = 19275
+19275 set_robust_list(0x7efca1ff09e0, 24) = 0
+19275 rt_sigaction(SIGRTMIN, {0x7efca1bd1b60, [], SA_RESTORER|SA_SIGINFO, 0x7efca1bdca00}, NULL, 8) = 0
+19275 rt_sigaction(SIGRT_1, {0x7efca1bd1bf0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7efca1bdca00}, NULL, 8) = 0
+19275 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+19275 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+19275 brk(NULL)                         = 0x1280000
+19275 brk(0x12a1000)                    = 0x12a1000
+19275 brk(NULL)                         = 0x12a1000
+19275 sched_getaffinity(0, 8192, [0 1 2 3]) = 8
+19275 mmap(0xc000000000, 65536, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xc000000000
+19275 munmap(0xc000000000, 65536)       = 0
+19275 mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7efca1faf000
+19275 mmap(0xc820000000, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xc820000000
+19275 mmap(0xc81fff8000, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xc81fff8000
+19275 mmap(0xc000000000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xc000000000
+19275 mmap(NULL, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7efca1ff9000
+19275 rt_sigprocmask(SIG_SETMASK, NULL, [], 8) = 0
+19275 sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+19275 sigaltstack({ss_sp=0xc820002000, ss_flags=0, ss_size=32672}, NULL) = 0
+19275 gettid()                          = 19275
+19275 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+19275 rt_sigaction(SIGHUP, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGHUP, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGINT, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGINT, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGQUIT, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGQUIT, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGILL, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGILL, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGTRAP, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGTRAP, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGABRT, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGABRT, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGBUS, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGBUS, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGFPE, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGFPE, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGUSR1, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGUSR1, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGSEGV, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGSEGV, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGUSR2, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGUSR2, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGPIPE, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGPIPE, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGALRM, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGALRM, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGTERM, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGTERM, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGSTKFLT, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGSTKFLT, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGCHLD, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGCHLD, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGURG, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGURG, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGXCPU, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGXCPU, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGXFSZ, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGXFSZ, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGVTALRM, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGVTALRM, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGPROF, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGPROF, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGWINCH, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGWINCH, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGIO, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGIO, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGPWR, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGPWR, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGSYS, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGSYS, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGRTMIN, NULL, {0x7efca1bd1b60, [], SA_RESTORER|SA_SIGINFO, 0x7efca1bdca00}, 8) = 0
+19275 rt_sigaction(SIGRTMIN, NULL, {0x7efca1bd1b60, [], SA_RESTORER|SA_SIGINFO, 0x7efca1bdca00}, 8) = 0
+19275 rt_sigaction(SIGRTMIN, {0x7efca1bd1b60, [], SA_RESTORER|SA_STACK|SA_SIGINFO, 0x7efca1bdca00}, NULL, 8) = 0
+19275 rt_sigaction(SIGRT_1, NULL, {0x7efca1bd1bf0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7efca1bdca00}, 8) = 0
+19275 rt_sigaction(SIGRT_1, NULL, {0x7efca1bd1bf0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7efca1bdca00}, 8) = 0
+19275 rt_sigaction(SIGRT_1, {0x7efca1bd1bf0, [], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x7efca1bdca00}, NULL, 8) = 0
+19275 rt_sigaction(SIGRT_2, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGRT_2, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGRT_3, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGRT_3, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGRT_4, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGRT_4, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGRT_5, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGRT_5, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGRT_6, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGRT_6, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGRT_7, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGRT_7, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGRT_8, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGRT_8, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGRT_9, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGRT_9, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGRT_10, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGRT_10, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGRT_11, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGRT_11, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGRT_12, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGRT_12, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGRT_13, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGRT_13, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGRT_14, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGRT_14, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGRT_15, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGRT_15, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGRT_16, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGRT_16, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGRT_17, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGRT_17, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGRT_18, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGRT_18, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGRT_19, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGRT_19, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGRT_20, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGRT_20, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGRT_21, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGRT_21, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGRT_22, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGRT_22, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGRT_23, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGRT_23, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGRT_24, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGRT_24, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGRT_25, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGRT_25, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGRT_26, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGRT_26, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGRT_27, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGRT_27, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGRT_28, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGRT_28, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGRT_29, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGRT_29, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGRT_30, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGRT_30, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGRT_31, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGRT_31, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigaction(SIGRT_32, NULL, {SIG_DFL, [], 0}, 8) = 0
+19275 rt_sigaction(SIGRT_32, {0x47b180, ~[], SA_RESTORER|SA_STACK|SA_RESTART|SA_SIGINFO, 0x47b1a0}, NULL, 8) = 0
+19275 rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+19275 mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7efca0dc9000
+19275 mprotect(0x7efca0dc9000, 4096, PROT_NONE) = 0
+19275 clone(child_stack=0x7efca15c8ff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7efca15c99d0, tls=0x7efca15c9700, child_tidptr=0x7efca15c99d0) = 19279
+19279 set_robust_list(0x7efca15c99e0, 24 <unfinished ...>
+19275 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+19279 <... set_robust_list resumed> )   = 0
+19275 <... rt_sigprocmask resumed> NULL, 8) = 0
+19279 sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+19275 mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+19279 sigaltstack({ss_sp=0xc82003a000, ss_flags=0, ss_size=32672},  <unfinished ...>
+19275 <... mmap resumed> )              = 0x7efca1f6f000
+19279 <... sigaltstack resumed> NULL)   = 0
+19279 gettid()                          = 19279
+19279 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19275 rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+19275 mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7efca05c8000
+19275 mprotect(0x7efca05c8000, 4096, PROT_NONE) = 0
+19275 clone( <unfinished ...>
+19279 <... select resumed> )            = 0 (Timeout)
+19280 set_robust_list(0x7efca0dc89e0, 24 <unfinished ...>
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19280 <... set_robust_list resumed> )   = 0
+19275 <... clone resumed> child_stack=0x7efca0dc7ff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7efca0dc89d0, tls=0x7efca0dc8700, child_tidptr=0x7efca0dc89d0) = 19280
+19280 sigaltstack(NULL,  <unfinished ...>
+19275 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+19280 <... sigaltstack resumed> {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+19275 <... rt_sigprocmask resumed> NULL, 8) = 0
+19280 sigaltstack({ss_sp=0xc82004a000, ss_flags=0, ss_size=32672}, NULL) = 0
+19280 gettid( <unfinished ...>
+19275 rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1],  <unfinished ...>
+19280 <... gettid resumed> )            = 19280
+19275 <... rt_sigprocmask resumed> [], 8) = 0
+19280 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+19275 mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+19280 <... rt_sigprocmask resumed> NULL, 8) = 0
+19279 <... select resumed> )            = 0 (Timeout)
+19275 <... mmap resumed> )              = 0x7efc9fdc7000
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19280 mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+19275 mprotect(0x7efc9fdc7000, 4096, PROT_NONE <unfinished ...>
+19280 <... mmap resumed> )              = 0x7efc97dc7000
+19275 <... mprotect resumed> )          = 0
+19280 munmap(0x7efc97dc7000, 2330624 <unfinished ...>
+19275 clone( <unfinished ...>
+19280 <... munmap resumed> )            = 0
+19280 munmap(0x7efc9c000000, 64778240)  = 0
+19281 set_robust_list(0x7efca05c79e0, 24 <unfinished ...>
+19280 mprotect(0x7efc98000000, 135168, PROT_READ|PROT_WRITE <unfinished ...>
+19281 <... set_robust_list resumed> )   = 0
+19280 <... mprotect resumed> )          = 0
+19281 sigaltstack(NULL,  <unfinished ...>
+19279 <... select resumed> )            = 0 (Timeout)
+19281 <... sigaltstack resumed> {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+19280 rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1],  <unfinished ...>
+19281 sigaltstack({ss_sp=0xc820054000, ss_flags=0, ss_size=32672},  <unfinished ...>
+19280 <... rt_sigprocmask resumed> [], 8) = 0
+19281 <... sigaltstack resumed> NULL)   = 0
+19280 mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+19281 gettid( <unfinished ...>
+19280 <... mmap resumed> )              = 0x7efc9f5c6000
+19281 <... gettid resumed> )            = 19281
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19281 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+19280 mprotect(0x7efc9f5c6000, 4096, PROT_NONE <unfinished ...>
+19281 <... rt_sigprocmask resumed> NULL, 8) = 0
+19280 <... mprotect resumed> )          = 0
+19281 futex(0xc820028d08, FUTEX_WAIT, 0, NULL <unfinished ...>
+19280 clone( <unfinished ...>
+19275 <... clone resumed> child_stack=0x7efca05c6ff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7efca05c79d0, tls=0x7efca05c7700, child_tidptr=0x7efca05c79d0) = 19281
+19282 set_robust_list(0x7efc9fdc69e0, 24 <unfinished ...>
+19280 <... clone resumed> child_stack=0x7efc9fdc5ff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7efc9fdc69d0, tls=0x7efc9fdc6700, child_tidptr=0x7efc9fdc69d0) = 19282
+19282 <... set_robust_list resumed> )   = 0
+19280 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+19282 sigaltstack(NULL,  <unfinished ...>
+19280 <... rt_sigprocmask resumed> NULL, 8) = 0
+19282 <... sigaltstack resumed> {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+19280 futex(0xc4e1e8, FUTEX_WAKE, 1 <unfinished ...>
+19282 sigaltstack({ss_sp=0xc820060000, ss_flags=0, ss_size=32672},  <unfinished ...>
+19280 <... futex resumed> )             = 0
+19282 <... sigaltstack resumed> NULL)   = 0
+19280 futex(0xc820028908, FUTEX_WAIT, 0, NULL <unfinished ...>
+19282 gettid( <unfinished ...>
+19279 <... select resumed> )            = 0 (Timeout)
+19282 <... gettid resumed> )            = 19282
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19282 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+19275 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+19282 <... rt_sigprocmask resumed> NULL, 8) = 0
+19275 <... rt_sigprocmask resumed> NULL, 8) = 0
+19282 futex(0xc82005c108, FUTEX_WAIT, 0, NULL <unfinished ...>
+19275 futex(0xc82005c108, FUTEX_WAKE, 1 <unfinished ...>
+19282 <... futex resumed> )             = 0
+19275 <... futex resumed> )             = 1
+19282 select(0, NULL, NULL, NULL, {0, 100} <unfinished ...>
+19275 futex(0xc820028908, FUTEX_WAKE, 1 <unfinished ...>
+19280 <... futex resumed> )             = 0
+19275 <... futex resumed> )             = 1
+19280 futex(0xc4e1e8, FUTEX_WAKE, 1)    = 0
+19279 <... select resumed> )            = 0 (Timeout)
+19280 futex(0xc820028908, FUTEX_WAIT, 0, NULL <unfinished ...>
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19275 mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7efca1f2f000
+19279 <... select resumed> )            = 0 (Timeout)
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19282 <... select resumed> )            = 0 (Timeout)
+19282 select(0, NULL, NULL, NULL, {0, 100} <unfinished ...>
+19279 <... select resumed> )            = 0 (Timeout)
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19275 capget({0 /* _LINUX_CAPABILITY_VERSION_??? */, 32508}, NULL) = 0
+19275 openat(AT_FDCWD, "/proc/sys/kernel/cap_last_cap", O_RDONLY|O_CLOEXEC) = 3
+19275 read(3,  <unfinished ...>
+19279 <... select resumed> )            = 0 (Timeout)
+19275 <... read resumed> "37\n", 11)    = 3
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19282 <... select resumed> )            = 0 (Timeout)
+19282 futex(0xc820028908, FUTEX_WAKE, 1 <unfinished ...>
+19275 close(3 <unfinished ...>
+19282 <... futex resumed> )             = 1
+19280 <... futex resumed> )             = 0
+19282 futex(0xc82005c108, FUTEX_WAIT, 0, NULL <unfinished ...>
+19280 futex(0xc820028908, FUTEX_WAIT, 0, NULL <unfinished ...>
+19275 <... close resumed> )             = 0
+19275 ioctl(1, TCGETS <unfinished ...>
+19279 <... select resumed> )            = 0 (Timeout)
+19275 <... ioctl resumed> , {B38400 opost isig icanon echo ...}) = 0
+19279 select(0, NULL, NULL, NULL, {0, 20}) = 0 (Timeout)
+19279 select(0, NULL, NULL, NULL, {0, 20}) = 0 (Timeout)
+19275 openat(AT_FDCWD, "/proc/sys/net/core/somaxconn", O_RDONLY|O_CLOEXEC <unfinished ...>
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19275 <... openat resumed> )            = 3
+19275 read(3, "128\n", 4096)            = 4
+19275 read(3, "", 4092)                 = 0
+19275 close(3 <unfinished ...>
+19279 <... select resumed> )            = 0 (Timeout)
+19275 <... close resumed> )             = 0
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19275 socket(AF_INET, SOCK_STREAM, IPPROTO_TCP) = 3
+19275 close(3)                          = 0
+19275 socket(AF_INET6, SOCK_STREAM, IPPROTO_TCP <unfinished ...>
+19279 <... select resumed> )            = 0 (Timeout)
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19275 <... socket resumed> )            = 3
+19275 setsockopt(3, SOL_IPV6, IPV6_V6ONLY, [1], 4) = 0
+19275 bind(3, {sa_family=AF_INET6, sin6_port=htons(0), inet_pton(AF_INET6, "::1", &sin6_addr), sin6_flowinfo=0, sin6_scope_id=0}, 28) = 0
+19275 socket(AF_INET6, SOCK_STREAM, IPPROTO_TCP <unfinished ...>
+19279 <... select resumed> )            = 0 (Timeout)
+19275 <... socket resumed> )            = 4
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19275 setsockopt(4, SOL_IPV6, IPV6_V6ONLY, [0], 4) = 0
+19275 bind(4, {sa_family=AF_INET6, sin6_port=htons(0), inet_pton(AF_INET6, "::ffff:127.0.0.1", &sin6_addr), sin6_flowinfo=0, sin6_scope_id=0}, 28) = 0
+19275 close(4)                          = 0
+19275 close(3)                          = 0
+19279 <... select resumed> )            = 0 (Timeout)
+19275 openat(AT_FDCWD, "/sys/kernel/mm/hugepages", O_RDONLY|O_CLOEXEC <unfinished ...>
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19275 <... openat resumed> )            = 3
+19275 getdents64(3, /* 4 entries */, 4096) = 128
+19275 getdents64(3, /* 0 entries */, 4096) = 0
+19275 lstat("/sys/kernel/mm/hugepages/hugepages-1048576kB", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+19279 <... select resumed> )            = 0 (Timeout)
+19275 lstat("/sys/kernel/mm/hugepages/hugepages-2048kB",  <unfinished ...>
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19275 <... lstat resumed> {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+19275 close(3)                          = 0
+19279 <... select resumed> )            = 0 (Timeout)
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19275 futex(0xc820028908, FUTEX_WAKE, 1 <unfinished ...>
+19279 <... select resumed> )            = 0 (Timeout)
+19280 <... futex resumed> )             = 0
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19280 select(0, NULL, NULL, NULL, {0, 100} <unfinished ...>
+19275 <... futex resumed> )             = 1
+19275 futex(0xc82005c108, FUTEX_WAKE, 1 <unfinished ...>
+19282 <... futex resumed> )             = 0
+19275 <... futex resumed> )             = 1
+19282 futex(0xc4e1e8, FUTEX_WAKE, 1 <unfinished ...>
+19275 futex(0xc4e1e8, FUTEX_WAIT, 0, NULL <unfinished ...>
+19282 <... futex resumed> )             = 0
+19275 <... futex resumed> )             = -1 EAGAIN (Resource temporarily unavailable)
+19282 futex(0xc82005c108, FUTEX_WAIT, 0, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+19275 futex(0xc82005c108, FUTEX_WAKE, 1 <unfinished ...>
+19282 futex(0xc4e1e8, FUTEX_WAKE, 1 <unfinished ...>
+19275 <... futex resumed> )             = 0
+19282 <... futex resumed> )             = 0
+19279 <... select resumed> )            = 0 (Timeout)
+19282 futex(0xc82005c108, FUTEX_WAIT, 0, NULL <unfinished ...>
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19282 <... futex resumed> )             = -1 EAGAIN (Resource temporarily unavailable)
+19275 futex(0xc82005c108, FUTEX_WAKE, 1 <unfinished ...>
+19282 futex(0xc4e1e8, FUTEX_WAKE, 1 <unfinished ...>
+19275 <... futex resumed> )             = 0
+19282 <... futex resumed> )             = 0
+19275 futex(0xc820028d08, FUTEX_WAKE, 1 <unfinished ...>
+19282 futex(0xc82005c108, FUTEX_WAIT, 0, NULL <unfinished ...>
+19275 <... futex resumed> )             = 1
+19281 <... futex resumed> )             = 0
+19275 futex(0xc4e1e8, FUTEX_WAIT, 0, NULL <unfinished ...>
+19281 futex(0xc4e1e8, FUTEX_WAKE, 1 <unfinished ...>
+19275 <... futex resumed> )             = -1 EAGAIN (Resource temporarily unavailable)
+19281 <... futex resumed> )             = 0
+19281 futex(0xc820028d08, FUTEX_WAIT, 0, NULL <unfinished ...>
+19275 futex(0xc82005c108, FUTEX_WAKE, 1 <unfinished ...>
+19280 <... select resumed> )            = 0 (Timeout)
+19282 <... futex resumed> )             = 0
+19280 futex(0xc820028d08, FUTEX_WAKE, 1 <unfinished ...>
+19282 futex(0xc82005c108, FUTEX_WAIT, 0, NULL <unfinished ...>
+19280 <... futex resumed> )             = 1
+19281 <... futex resumed> )             = 0
+19279 <... select resumed> )            = 0 (Timeout)
+19280 futex(0xc4e1e8, FUTEX_WAKE, 1 <unfinished ...>
+19281 futex(0xc820028d08, FUTEX_WAIT, 0, NULL <unfinished ...>
+19280 <... futex resumed> )             = 0
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19280 futex(0xc820028908, FUTEX_WAIT, 0, NULL <unfinished ...>
+19275 <... futex resumed> )             = 1
+19275 futex(0xc820028908, FUTEX_WAKE, 1 <unfinished ...>
+19280 <... futex resumed> )             = 0
+19275 <... futex resumed> )             = 1
+19280 select(0, NULL, NULL, NULL, {0, 100} <unfinished ...>
+19275 futex(0xc820028d08, FUTEX_WAKE, 1 <unfinished ...>
+19281 <... futex resumed> )             = 0
+19275 <... futex resumed> )             = 1
+19281 futex(0xc4e1e8, FUTEX_WAKE, 1 <unfinished ...>
+19275 futex(0xc82005c108, FUTEX_WAKE, 1 <unfinished ...>
+19281 <... futex resumed> )             = 0
+19282 <... futex resumed> )             = 0
+19281 futex(0xc820028d08, FUTEX_WAIT, 0, NULL <unfinished ...>
+19282 futex(0xc4e1e8, FUTEX_WAKE, 1 <unfinished ...>
+19279 <... select resumed> )            = 0 (Timeout)
+19282 <... futex resumed> )             = 0
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19282 futex(0xc82005c108, FUTEX_WAIT, 0, NULL <unfinished ...>
+19275 <... futex resumed> )             = 1
+19275 futex(0xc82005c108, FUTEX_WAKE, 1 <unfinished ...>
+19282 <... futex resumed> )             = 0
+19275 <... futex resumed> )             = 1
+19282 futex(0xc4e1e8, FUTEX_WAKE, 1)    = 0
+19275 futex(0xc820028d08, FUTEX_WAKE, 1 <unfinished ...>
+19282 futex(0xc82005c108, FUTEX_WAIT, 0, NULL <unfinished ...>
+19281 <... futex resumed> )             = 0
+19275 <... futex resumed> )             = 1
+19281 futex(0xc4e1e8, FUTEX_WAKE, 1)    = 0
+19275 futex(0xc82005c108, FUTEX_WAKE, 1 <unfinished ...>
+19281 futex(0xc820028d08, FUTEX_WAIT, 0, NULL <unfinished ...>
+19282 <... futex resumed> )             = 0
+19275 <... futex resumed> )             = 1
+19282 futex(0xc4e1e8, FUTEX_WAKE, 1 <unfinished ...>
+19279 <... select resumed> )            = 0 (Timeout)
+19282 <... futex resumed> )             = 0
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19282 futex(0xc82005c108, FUTEX_WAIT, 0, NULL <unfinished ...>
+19280 <... select resumed> )            = 0 (Timeout)
+19275 futex(0xc820028d08, FUTEX_WAKE, 1 <unfinished ...>
+19280 futex(0xc82005c108, FUTEX_WAKE, 1 <unfinished ...>
+19275 <... futex resumed> )             = 1
+19281 <... futex resumed> )             = 0
+19282 <... futex resumed> )             = 0
+19281 futex(0xc820028d08, FUTEX_WAIT, 0, NULL <unfinished ...>
+19282 futex(0xc82005c108, FUTEX_WAIT, 0, NULL <unfinished ...>
+19280 <... futex resumed> )             = 1
+19275 futex(0xc4e1e8, FUTEX_WAIT, 0, NULL <unfinished ...>
+19280 futex(0xc82005c108, FUTEX_WAKE, 1 <unfinished ...>
+19282 <... futex resumed> )             = 0
+19280 <... futex resumed> )             = 1
+19282 select(0, NULL, NULL, NULL, {0, 100} <unfinished ...>
+19280 futex(0xc4e1e8, FUTEX_WAKE, 1)    = 1
+19275 <... futex resumed> )             = 0
+19280 futex(0xc820028908, FUTEX_WAIT, 0, NULL <unfinished ...>
+19279 <... select resumed> )            = 0 (Timeout)
+19280 <... futex resumed> )             = -1 EAGAIN (Resource temporarily unavailable)
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19280 futex(0xc4e1e8, FUTEX_WAKE, 1 <unfinished ...>
+19275 futex(0xc820028908, FUTEX_WAKE, 1 <unfinished ...>
+19280 <... futex resumed> )             = 0
+19275 <... futex resumed> )             = 0
+19280 futex(0xc820028908, FUTEX_WAIT, 0, NULL <unfinished ...>
+19275 mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7efca1eef000
+19275 futex(0xc820028908, FUTEX_WAKE, 1 <unfinished ...>
+19280 <... futex resumed> )             = 0
+19275 <... futex resumed> )             = 1
+19280 futex(0xc4e1e8, FUTEX_WAKE, 1 <unfinished ...>
+19275 futex(0xc820028d08, FUTEX_WAKE, 1 <unfinished ...>
+19280 <... futex resumed> )             = 0
+19281 <... futex resumed> )             = 0
+19280 futex(0xc820028908, FUTEX_WAIT, 0, NULL <unfinished ...>
+19281 futex(0xc4e1e8, FUTEX_WAKE, 1 <unfinished ...>
+19279 <... select resumed> )            = 0 (Timeout)
+19281 <... futex resumed> )             = 0
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19281 futex(0xc820028d08, FUTEX_WAIT, 0, NULL <unfinished ...>
+19275 <... futex resumed> )             = 1
+19282 <... select resumed> )            = 0 (Timeout)
+19275 futex(0xc820028d08, FUTEX_WAKE, 1 <unfinished ...>
+19282 select(0, NULL, NULL, NULL, {0, 100} <unfinished ...>
+19281 <... futex resumed> )             = 0
+19275 <... futex resumed> )             = 1
+19281 futex(0xc4e1e8, FUTEX_WAKE, 1)    = 0
+19275 futex(0xc820028908, FUTEX_WAKE, 1 <unfinished ...>
+19281 futex(0xc820028d08, FUTEX_WAIT, 0, NULL <unfinished ...>
+19280 <... futex resumed> )             = 0
+19275 <... futex resumed> )             = 1
+19280 futex(0xc4e1e8, FUTEX_WAKE, 1 <unfinished ...>
+19275 futex(0xc820028d08, FUTEX_WAKE, 1 <unfinished ...>
+19280 <... futex resumed> )             = 0
+19275 <... futex resumed> )             = 1
+19281 <... futex resumed> )             = 0
+19280 futex(0xc820028908, FUTEX_WAIT, 0, NULL <unfinished ...>
+19281 futex(0xc4e1e8, FUTEX_WAKE, 1 <unfinished ...>
+19279 <... select resumed> )            = 0 (Timeout)
+19281 <... futex resumed> )             = 0
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19281 futex(0xc820028d08, FUTEX_WAIT, 0, NULL <unfinished ...>
+19275 futex(0xc4e1e8, FUTEX_WAIT, 0, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+19275 futex(0xc820028d08, FUTEX_WAKE, 1 <unfinished ...>
+19281 <... futex resumed> )             = 0
+19275 <... futex resumed> )             = 1
+19281 futex(0xc4e1e8, FUTEX_WAKE, 1)    = 0
+19275 futex(0xc820028908, FUTEX_WAKE, 1 <unfinished ...>
+19281 futex(0xc820028d08, FUTEX_WAIT, 0, NULL <unfinished ...>
+19280 <... futex resumed> )             = 0
+19275 <... futex resumed> )             = 1
+19280 futex(0xc4e1e8, FUTEX_WAKE, 1)    = 0
+19275 futex(0xc820028d08, FUTEX_WAKE, 1 <unfinished ...>
+19280 futex(0xc820028908, FUTEX_WAIT, 0, NULL <unfinished ...>
+19282 <... select resumed> )            = 0 (Timeout)
+19281 <... futex resumed> )             = 0
+19282 futex(0xc820028908, FUTEX_WAKE, 1 <unfinished ...>
+19281 futex(0xc820028d08, FUTEX_WAIT, 0, NULL <unfinished ...>
+19282 <... futex resumed> )             = 1
+19280 <... futex resumed> )             = 0
+19282 futex(0xc4e1e8, FUTEX_WAKE, 1 <unfinished ...>
+19280 futex(0xc820028908, FUTEX_WAIT, 0, NULL <unfinished ...>
+19282 <... futex resumed> )             = 0
+19279 <... select resumed> )            = 0 (Timeout)
+19282 futex(0xc82005c108, FUTEX_WAIT, 0, NULL <unfinished ...>
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19275 <... futex resumed> )             = 1
+19275 futex(0xc82005c108, FUTEX_WAKE, 1 <unfinished ...>
+19282 <... futex resumed> )             = 0
+19275 <... futex resumed> )             = 1
+19282 select(0, NULL, NULL, NULL, {0, 100} <unfinished ...>
+19275 futex(0xc820028908, FUTEX_WAKE, 1 <unfinished ...>
+19280 <... futex resumed> )             = 0
+19275 <... futex resumed> )             = 1
+19280 futex(0xc4e1e8, FUTEX_WAKE, 1)    = 0
+19280 futex(0xc820028908, FUTEX_WAIT, 0, NULL <unfinished ...>
+19279 <... select resumed> )            = 0 (Timeout)
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19275 futex(0xc820028908, FUTEX_WAKE, 1 <unfinished ...>
+19280 <... futex resumed> )             = 0
+19275 <... futex resumed> )             = 1
+19280 futex(0xc4e1e8, FUTEX_WAKE, 1 <unfinished ...>
+19275 futex(0xc820028d08, FUTEX_WAKE, 1 <unfinished ...>
+19280 <... futex resumed> )             = 0
+19275 <... futex resumed> )             = 1
+19281 <... futex resumed> )             = 0
+19280 futex(0xc820028908, FUTEX_WAIT, 0, NULL <unfinished ...>
+19281 futex(0xc4e1e8, FUTEX_WAKE, 1 <unfinished ...>
+19275 futex(0xc4e1e8, FUTEX_WAIT, 0, NULL <unfinished ...>
+19281 <... futex resumed> )             = 0
+19275 <... futex resumed> )             = -1 EAGAIN (Resource temporarily unavailable)
+19281 futex(0xc820028d08, FUTEX_WAIT, 0, NULL <unfinished ...>
+19275 futex(0xc820028d08, FUTEX_WAKE, 1 <unfinished ...>
+19279 <... select resumed> )            = 0 (Timeout)
+19281 <... futex resumed> )             = 0
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19281 futex(0xc4e1e8, FUTEX_WAKE, 1 <unfinished ...>
+19282 <... select resumed> )            = 0 (Timeout)
+19281 <... futex resumed> )             = 0
+19282 futex(0xc82005c108, FUTEX_WAIT, 0, NULL <unfinished ...>
+19281 futex(0xc820028d08, FUTEX_WAIT, 0, NULL <unfinished ...>
+19275 <... futex resumed> )             = 1
+19275 futex(0xc820028d08, FUTEX_WAKE, 1 <unfinished ...>
+19281 <... futex resumed> )             = 0
+19275 <... futex resumed> )             = 1
+19281 select(0, NULL, NULL, NULL, {0, 100} <unfinished ...>
+19275 futex(0xc82005c108, FUTEX_WAKE, 1 <unfinished ...>
+19282 <... futex resumed> )             = 0
+19275 <... futex resumed> )             = 1
+19282 futex(0xc4e1e8, FUTEX_WAKE, 1)    = 0
+19275 futex(0xc820028908, FUTEX_WAKE, 1 <unfinished ...>
+19282 futex(0xc82005c108, FUTEX_WAIT, 0, NULL <unfinished ...>
+19280 <... futex resumed> )             = 0
+19279 <... select resumed> )            = 0 (Timeout)
+19280 futex(0xc4e1e8, FUTEX_WAKE, 1 <unfinished ...>
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19280 <... futex resumed> )             = 0
+19275 <... futex resumed> )             = 1
+19280 futex(0xc820028908, FUTEX_WAIT, 0, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+19275 futex(0xc820028908, FUTEX_WAKE, 1 <unfinished ...>
+19280 futex(0xc4e1e8, FUTEX_WAKE, 1 <unfinished ...>
+19275 <... futex resumed> )             = 0
+19280 <... futex resumed> )             = 0
+19275 futex(0xc82005c108, FUTEX_WAKE, 1 <unfinished ...>
+19280 futex(0xc820028908, FUTEX_WAIT, 0, NULL <unfinished ...>
+19282 <... futex resumed> )             = 0
+19275 <... futex resumed> )             = 1
+19282 futex(0xc4e1e8, FUTEX_WAKE, 1)    = 0
+19282 futex(0xc82005c108, FUTEX_WAIT, 0, NULL <unfinished ...>
+19279 <... select resumed> )            = 0 (Timeout)
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19281 <... select resumed> )            = 0 (Timeout)
+19281 futex(0xc820028d08, FUTEX_WAIT, 0, NULL <unfinished ...>
+19275 futex(0xc820028d08, FUTEX_WAKE, 1 <unfinished ...>
+19281 <... futex resumed> )             = 0
+19275 <... futex resumed> )             = 1
+19281 select(0, NULL, NULL, NULL, {0, 100} <unfinished ...>
+19275 futex(0xc82005c108, FUTEX_WAKE, 1 <unfinished ...>
+19282 <... futex resumed> )             = 0
+19279 <... select resumed> )            = 0 (Timeout)
+19282 futex(0xc4e1e8, FUTEX_WAKE, 1 <unfinished ...>
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19282 <... futex resumed> )             = 0
+19275 <... futex resumed> )             = 1
+19282 futex(0xc82005c108, FUTEX_WAIT, 0, NULL <unfinished ...>
+19275 futex(0xc82005c108, FUTEX_WAKE, 1 <unfinished ...>
+19282 <... futex resumed> )             = -1 EAGAIN (Resource temporarily unavailable)
+19275 <... futex resumed> )             = 0
+19282 futex(0xc4e1e8, FUTEX_WAKE, 1)    = 0
+19275 futex(0xc820028908, FUTEX_WAKE, 1 <unfinished ...>
+19282 futex(0xc82005c108, FUTEX_WAIT, 0, NULL <unfinished ...>
+19275 <... futex resumed> )             = 1
+19280 <... futex resumed> )             = 0
+19275 futex(0xc4e1e8, FUTEX_WAIT, 0, NULL <unfinished ...>
+19280 futex(0xc4e1e8, FUTEX_WAKE, 1 <unfinished ...>
+19275 <... futex resumed> )             = -1 EAGAIN (Resource temporarily unavailable)
+19280 <... futex resumed> )             = 0
+19280 futex(0xc820028908, FUTEX_WAIT, 0, NULL <unfinished ...>
+19275 futex(0xc82005c108, FUTEX_WAKE, 1 <unfinished ...>
+19279 <... select resumed> )            = 0 (Timeout)
+19282 <... futex resumed> )             = 0
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19282 futex(0xc4e1e8, FUTEX_WAKE, 1 <unfinished ...>
+19275 <... futex resumed> )             = 1
+19282 <... futex resumed> )             = 0
+19282 futex(0xc82005c108, FUTEX_WAIT, 0, NULL <unfinished ...>
+19275 futex(0xc820028908, FUTEX_WAKE, 1 <unfinished ...>
+19280 <... futex resumed> )             = 0
+19275 <... futex resumed> )             = 1
+19280 futex(0xc4e1e8, FUTEX_WAKE, 1)    = 0
+19281 <... select resumed> )            = 0 (Timeout)
+19280 futex(0xc820028908, FUTEX_WAIT, 0, NULL <unfinished ...>
+19281 futex(0xc820028908, FUTEX_WAKE, 1 <unfinished ...>
+19280 <... futex resumed> )             = -1 EAGAIN (Resource temporarily unavailable)
+19281 <... futex resumed> )             = 0
+19280 futex(0xc820028908, FUTEX_WAIT, 0, NULL <unfinished ...>
+19281 futex(0xc820028d08, FUTEX_WAIT, 0, NULL <unfinished ...>
+19279 <... select resumed> )            = 0 (Timeout)
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19275 futex(0xc820028d08, FUTEX_WAKE, 1 <unfinished ...>
+19281 <... futex resumed> )             = 0
+19275 <... futex resumed> )             = 1
+19281 select(0, NULL, NULL, NULL, {0, 100} <unfinished ...>
+19279 <... select resumed> )            = 0 (Timeout)
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19275 stat("/usr/local/sbin/runc", {st_mode=S_IFREG|0755, st_size=9711432, ...}) = 0
+19279 <... select resumed> )            = 0 (Timeout)
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19281 <... select resumed> )            = 0 (Timeout)
+19281 futex(0xc820028908, FUTEX_WAKE, 1) = 1
+19280 <... futex resumed> )             = 0
+19281 futex(0xc69420, FUTEX_WAIT, 0, NULL <unfinished ...>
+19280 futex(0xc820028908, FUTEX_WAIT, 0, NULL <unfinished ...>
+19275 openat(AT_FDCWD, "/dev/null", O_WRONLY|O_CREAT|O_APPEND|O_SYNC|O_CLOEXEC, 0666 <unfinished ...>
+19279 <... select resumed> )            = 0 (Timeout)
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19275 <... openat resumed> )            = 3
+19275 openat(AT_FDCWD, "config.json", O_RDONLY|O_CLOEXEC) = 4
+19275 read(4, "{\n\t\"ociVersion\": \"1.0.0-rc1-dev\""..., 512) = 512
+19279 <... select resumed> )            = 0 (Timeout)
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19275 read(4, "NET_BIND_SERVICE\",\n\t\t\t\"CAP_SYS_C"..., 1024) = 1024
+19275 read(4, "\"destination\": \"/sys\",\n\t\t\t\"type\""..., 2048) = 654
+19279 <... select resumed> )            = 0 (Timeout)
+19279 select(0, NULL, NULL, NULL, {0, 20}) = 0 (Timeout)
+19279 select(0, NULL, NULL, NULL, {0, 20}) = 0 (Timeout)
+19279 select(0, NULL, NULL, NULL, {0, 20}) = 0 (Timeout)
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19275 close(4)                          = 0
+19275 geteuid()                         = 0
+19275 stat(".", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+19275 getcwd("/home/hmeng/go/src/github.com/hmeng-19/myrunc/c3", 4096) = 49
+19279 <... select resumed> )            = 0 (Timeout)
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19275 openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY|O_CLOEXEC <unfinished ...>
+19279 <... select resumed> )            = 0 (Timeout)
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19275 <... openat resumed> )            = 4
+19275 read(4, "11:hugetlb:/\n10:pids:/\n9:freezer"..., 4096) = 200
+19275 read(4, "", 3896)                 = 0
+19279 <... select resumed> )            = 0 (Timeout)
+19275 close(4 <unfinished ...>
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19275 <... close resumed> )             = 0
+19275 stat("/home/hmeng/go/src/github.com/hmeng-19/myrunc/c3/rootfs", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+19275 stat("/run/runc", {st_mode=S_IFDIR|0700, st_size=40, ...}) = 0
+19279 <... select resumed> )            = 0 (Timeout)
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19275 lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+19275 lstat("/home/hmeng", {st_mode=S_IFDIR|0710, st_size=4096, ...}) = 0
+19275 lstat("/home/hmeng/go", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+19275 lstat("/home/hmeng/go/src",  <unfinished ...>
+19279 <... select resumed> )            = 0 (Timeout)
+19275 <... lstat resumed> {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19275 lstat("/home/hmeng/go/src/github.com", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+19275 lstat("/home/hmeng/go/src/github.com/hmeng-19", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+19275 lstat("/home/hmeng/go/src/github.com/hmeng-19/myrunc", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+19275 lstat("/home/hmeng/go/src/github.com/hmeng-19/myrunc/c3",  <unfinished ...>
+19279 <... select resumed> )            = 0 (Timeout)
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19275 <... lstat resumed> {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+19275 lstat("/home/hmeng/go/src/github.com/hmeng-19/myrunc/c3/rootfs", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+19275 stat("/proc/self/ns/user", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+19275 stat("/run/runc/1", 0xc8200ef558) = -1 ENOENT (No such file or directory)
+19275 stat("/run/runc/1", 0xc8200ef628) = -1 ENOENT (No such file or directory)
+19275 stat("/run/runc", {st_mode=S_IFDIR|0700, st_size=40, ...}) = 0
+19275 mkdirat(AT_FDCWD, "/run/runc/1", 0711 <unfinished ...>
+19279 <... select resumed> )            = 0 (Timeout)
+19279 select(0, NULL, NULL, NULL, {0, 20} <unfinished ...>
+19275 <... mkdirat resumed> )           = 0
+19275 fchownat(AT_FDCWD, "/run/runc/1", 0, 0, 0) = 0
+19275 umask(0)                          = 022
+19275 mknodat(AT_FDCWD, "/run/runc/1/exec.fifo", S_IFIFO|0622) = 0
+19275 umask(022)                        = 0
+19275 fchownat(AT_FDCWD, "/run/runc/1/exec.fifo", 0, 0, 0) = 0
+19275 unlinkat(AT_FDCWD, "/run/runc/1", 0) = -1 EISDIR (Is a directory)
+19275 unlinkat(AT_FDCWD, "/run/runc/1", AT_REMOVEDIR) = -1 ENOTEMPTY (Directory not empty)
+19275 lstat("/run/runc/1", {st_mode=S_IFDIR|0711, st_size=60, ...}) = 0
+19275 openat(AT_FDCWD, "/run/runc/1", O_RDONLY|O_CLOEXEC) = 4
+19275 mmap(0xc820100000, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xc820100000
+19275 mmap(0xc81fff0000, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xc81fff0000
+19275 getdents64(4, /* 3 entries */, 4096) = 80
+19275 getdents64(4, /* 0 entries */, 4096) = 0
+19275 unlinkat(AT_FDCWD, "/run/runc/1/exec.fifo", 0) = 0
+19275 getdents64(4, /* 0 entries */, 4096) = 0
+19275 close(4)                          = 0
+19275 unlinkat(AT_FDCWD, "/run/runc/1", 0) = -1 EISDIR (Is a directory)
+19275 unlinkat(AT_FDCWD, "/run/runc/1", AT_REMOVEDIR) = 0
+19275 write(3, "\33[31mERRO\33[0m[0000] cannot alloc"..., 66) = 66
+19275 write(2, "cannot allocate tty if runc will"..., 40) = 40
+19275 exit_group(1)                     = ?
+19282 +++ exited with 1 +++
+19281 +++ exited with 1 +++
+19280 +++ exited with 1 +++
+19279 +++ exited with 1 +++
+19275 +++ exited with 1 +++
